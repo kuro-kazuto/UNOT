@@ -2,19 +2,25 @@
 
 =================================================
 
-Anggota 1
+KELOMPOK : 
 
-Nama : GALIH AJI PAMBUDI
+MATA KULIAH : Aplikasi Bergerak
 
-NIM : 3332180058
+=============== Anggota 1 =======================
 
-URL GITHUB : github.com/kuro-kazuto
+=== Nama : GALIH AJI PAMBUDI                  ===
+
+=== NIM : 3332180058                          ===
+
+=== URL GITHUB : github.com/kuro-kazuto       ===
 
 
-Anggota 2
+=============== Anggota 2 =======================
 
-Nama : DIMAS EMERALDO AS-SYIDIQI
+=== Nama : DIMAS EMERALDO AS-SYIDIQI          ===
 
-NIM : 3332180065
+=== NIM : 3332180065                          ===
 
-URL GITHUB : github.com/
+=== URL GITHUB : github.com/                  ===
+
+=================================================
