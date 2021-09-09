@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "342292145892",
+    "project_id": "unot-unot",
+    "storage_bucket": "unot-unot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:342292145892:android:7975af1dd45794c5e4aef1",
+        "android_client_info": {
+          "package_name": "com.untirta.unot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "342292145892-j218ibo3ih1h7lg76bqfuvutc7rip038.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCA_QkI0VYl1TA93J-77FS90InXt8SvC_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "342292145892-j218ibo3ih1h7lg76bqfuvutc7rip038.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
