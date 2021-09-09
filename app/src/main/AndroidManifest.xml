@@ -9,6 +9,13 @@
         android:roundIcon="@mipmap/ico_circle_mini"
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT">
+
+        <activity
+            android:name=".Create_account"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".Login"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Dashboard" />
         <activity

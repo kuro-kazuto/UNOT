@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/first_gradient"
+    android:orientation="vertical"
+    tools:context=".Help">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TATA CARA PENGGUNAAN APLIKASI"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:layout_marginTop="@dimen/fab_margin"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Timer sudah diatur otomatis saat habis akan pindah ke section berikutnya"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Pada Listening Section terdapat tombol player sound, silahkan aktifkan saat listening berlangsung"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Pada Reading Section terdapat tombol show text untuk melihat deskripsi text"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Saat anda sudah pindah dari satu section ke section berikutnya, anda tidak dapat kembali ke section sebelumya"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Aplikasi hanya dapat digunakan sekali untuk tiap NIM/NPM, sehingga anda tidak dapat mengulangi test kecuali anda melapor administrator."
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Anda tidak dapat melakukan Screenshoot terhadap jawaban dan soal, hal ini demi kerahasiaan soal dan menghindari kecurangan, namun anda masih bisa melakukan screenshoot terhadap hasil yag anda telah dapatkan"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Gunakan Email Untirta untuk mendaftar akun dan login, hal ini digunakan sebagai absen dan menunjukan bahwa anda mengerjakan soal ini"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Segera Hubungi Administrator apabila akun anda bermasalah atau terdapat masalah saat test berlangsung"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/bullet"
+                    android:drawablePadding="10dp"
+                    android:text="Aplikasi ini bersifat online, sehingga membutuhkan koneksi internet untuk melakukan input absen dan score tes yang didapatkan"
+                    android:textColor="@color/black"
+                    android:textAlignment="textStart"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

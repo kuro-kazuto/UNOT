@@ -10,5 +10,34 @@
 
     <color name="primary">#C10000</color>
     <color name="primary_dark">#200000</color>
+    <color name="colorAccent">#00009d</color>
+    <color name="colorOvalBorder">#50FFFFFF</color>
+    <color name="colorCircleBorder">#AAFFFFFF</color>
+    <color name="Blue_default">#000487</color>
+    <color name="Yellow">#FFFF3B</color>
+    <color name="RED">#CD0000</color>
+
+    ////////////
+
+    <color name="followers">#0D5D98</color>
+    <color name="headings">#3797CF</color>
+    <color name="solidCircle">#AAFFFFFF</color>
+    <color name="circleBorder">#50FFFFFF</color>
+    <color name="gradEnd">#f3f700</color>
+    <color name="gradStart">#ff9900</color>
+    <color name="followersBg">#ff9500</color>
+    <color name="followingBg">#ff9500</color>
+    <color name="grey">#E5E5E5</color>
+    <color name="grad2End">#5e5c5c</color>
+    <color name="grad2Start">#383636</color>
+    <color name="followersBg2">#858281</color>
+    <color name="followingBg2">#858281</color>
+
+    ////////////
+
+    <color name="transparent_green">#7700ff00</color>
+    <color name="transparent_red">#77ff0000</color>
+    <color name="transparent_grey">#77cccccc</color>
+    <color name="transparent_black">#55000000</color>
 
 </resources>
