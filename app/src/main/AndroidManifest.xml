@@ -25,7 +25,7 @@
             android:name=".Listening_direction"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".AdminActivity"
             android:exported="true" />
         <activity
             android:name=".Create_account"

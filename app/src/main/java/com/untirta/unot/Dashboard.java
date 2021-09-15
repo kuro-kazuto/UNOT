@@ -29,7 +29,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Industri";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);
@@ -40,7 +40,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Kimia";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);
@@ -51,7 +51,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Mesin";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);
@@ -62,7 +62,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Metalurgi";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);
@@ -73,7 +73,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Elektro";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);
@@ -84,7 +84,7 @@ public class Dashboard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String jurusan = "Teknik Sipil";
-                Intent intent =new Intent(Dashboard.this, MainActivity.class);
+                Intent intent =new Intent(Dashboard.this, AdminActivity.class);
                 intent.putExtra("name", NIM);
                 intent.putExtra("pilihan", jurusan);
                 startActivity(intent);

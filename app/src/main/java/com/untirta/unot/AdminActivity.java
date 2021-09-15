@@ -20,7 +20,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class MainActivity extends AppCompatActivity {
+public class AdminActivity extends AppCompatActivity {
     TextView tvdepartment;
 
     Button btnstart;
@@ -51,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         btnAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent about = new Intent(MainActivity.this, Help.class);
+                Intent about = new Intent(AdminActivity.this, Help.class);
                 startActivity(about);
             }
         });
@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity {
         btnHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent help = new Intent(MainActivity.this, Help.class);
+                Intent help = new Intent(AdminActivity.this, Help.class);
                 startActivity(help);
             }
         });
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
                 if(NIM.length()==10){
                     AddNIM();
                 }else {
-                    Toast.makeText(MainActivity.this, "NIM Must Be 10 Digit", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(AdminActivity.this, "NIM Must Be 10 Digit", Toast.LENGTH_SHORT).show();
                 }
 
 
@@ -91,10 +91,10 @@ public class MainActivity extends AppCompatActivity {
     private void AddNIM(){
         String name = editText.getText().toString();
         String pilihan = tvdepartment.getText().toString();
-        Intent intent = new Intent(MainActivity.this, Listening_direction.class);
+        Intent intent = new Intent(AdminActivity.this, Listening_direction.class);
         intent.putExtra("pilihan", pilihan);
         intent.putExtra("name", name);
-        Intent intent1 = new Intent(MainActivity.this, Blank404.class);
+        Intent intent1 = new Intent(AdminActivity.this, Blank404.class);
 
 
         if(!TextUtils.isEmpty(name)){
@@ -108,7 +108,7 @@ public class MainActivity extends AppCompatActivity {
                         NIM value = snapshot.child(name).getValue(NIM.class);
 
                         if (value.getNIM().equals(name)) {
-                            Toast.makeText(MainActivity.this, "NIM Alredy Exist", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(AdminActivity.this, "NIM Alredy Exist", Toast.LENGTH_SHORT).show();
                         }
                     }else {
                         dbAdmin.addListenerForSingleValueEvent(new ValueEventListener() {
