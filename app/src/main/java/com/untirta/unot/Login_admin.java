@@ -47,20 +47,28 @@ public class Login_admin extends AppCompatActivity {
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
                 akunDB();
+
+
+
+
 
             }
         });
 
 
+
+
+    }
+    private void peringatan(){
+        String EUser = tvUser.getText().toString().trim();
+        String EPass = tvPassword.getText().toString().trim();
         if(EUser.isEmpty()){
             tvUser.setError("UserName Tidak Boleh Kosong");
         }
         if (EPass.isEmpty()){
             tvPassword.setError("Password tidak boleh kosong");
         }
-
     }
     private void create_db(){
         String EUser = tvUser.getText().toString().trim();
@@ -93,8 +101,7 @@ public class Login_admin extends AppCompatActivity {
                     }else {
                         Toast.makeText(Login_admin.this, "Wrong UserName", Toast.LENGTH_SHORT).show();
                     }
-                }else {}
-                Toast.makeText(Login_admin.this, "Account dosen't exis", Toast.LENGTH_SHORT).show();
+                }
             }
 
             @Override
