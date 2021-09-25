@@ -21,7 +21,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Login_admin extends AppCompatActivity {
 
     EditText tvUser, tvPassword;
-    TextView tvUserdb, tvPassdb;
+    TextView tvUserdb, tvPassdb, pindah;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("AkunMimin");
     Button btnLogin;
 
@@ -37,8 +37,16 @@ public class Login_admin extends AppCompatActivity {
         tvUser = findViewById(R.id.usernameA);
         tvPassword = findViewById(R.id.passwordA);
         btnLogin = findViewById(R.id.BtnloginA);
+        pindah = findViewById(R.id.pindah);
 
+        pindah.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent Pindah = new Intent(Login_admin.this, Login.class);
+                startActivity(Pindah);
 
+            }
+        });
 
 
         String EUser = tvUser.getText().toString().trim();
@@ -48,11 +56,6 @@ public class Login_admin extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 akunDB();
-
-
-
-
-
             }
         });
 

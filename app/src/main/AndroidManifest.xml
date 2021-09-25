@@ -17,7 +17,8 @@
             android:exported="true" />
         <activity
             android:name=".Login_admin"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Blank404"
             android:exported="true" />
