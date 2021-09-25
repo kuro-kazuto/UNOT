@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/second_gradient"
     tools:context=".Login_admin">
 
     <ImageView
@@ -43,7 +44,7 @@
         android:layout_marginEnd="48dp"
         android:gravity="center"
         android:orientation="vertical"
-
+        android:src="@mipmap/ico_circle_mini"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -67,9 +68,9 @@
         android:layout_below="@id/spasi"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Welcome Sir, Please Login For Start"
-        android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:text="UNTIRTA ONLINE TEST"
+        android:textColor="#C10000"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +96,7 @@
         android:layout_below="@id/spasi1"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/rounded"
+        android:background="@drawable/rounded_white"
         android:drawableStart="@drawable/ic_username"
         android:hint="  Username Admin"
         android:padding="10dp"
@@ -117,7 +118,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/rounded"
+        android:background="@drawable/rounded_white"
         android:drawableStart="@drawable/ic_lock"
         android:hint="  Password"
         android:inputType="textPassword"
@@ -130,6 +131,23 @@
         app:layout_constraintTop_toBottomOf="@id/usernameA"
         tools:ignore="Autofill,HardcodedText" />
 
+    <TextView
+        android:id="@+id/buat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:text="Anda Seorang Pengguna ?"
+        android:textColor="#C10000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnloginA" />
+
     <Button
         android:id="@+id/BtnloginA"
         style="@style/Widget.AppCompat.Button"
@@ -140,8 +158,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="50dp"
         android:background="@drawable/rounded_login"
-        android:backgroundTint="#FFFF3B"
-        android:text="Login"
+        android:backgroundTint="#C10000"
+        android:text="Masuk"
         android:textColor="@color/white"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"

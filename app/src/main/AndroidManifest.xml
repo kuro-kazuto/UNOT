@@ -25,6 +25,9 @@
             android:name=".Listening_direction"
             android:exported="true" />
         <activity
+            android:name=".Help"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".AdminActivity"
             android:exported="true" />
         <activity

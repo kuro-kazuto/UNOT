@@ -43,9 +43,9 @@
         android:layout_below="@id/spasi"
         android:layout_marginTop="20dp"
         android:gravity="center"
-        android:text="Welcome Sir, Please Login For Start"
+        android:text="UNTIRTA ONLINE TEST"
         android:textColor="#FFFFFF"
-        android:textSize="18sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -71,7 +71,7 @@
         android:layout_below="@id/spasi1"
         android:layout_marginLeft="50dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/rounded"
+        android:background="@drawable/rounded_white"
         android:drawableStart="@drawable/ic_username"
         android:hint="  Email / Username"
         android:padding="10dp"
@@ -93,7 +93,7 @@
         android:layout_marginLeft="50dp"
         android:layout_marginTop="8dp"
         android:layout_marginRight="50dp"
-        android:background="@drawable/rounded"
+        android:background="@drawable/rounded_white"
         android:drawableStart="@drawable/ic_lock"
         android:hint="  Password"
         android:inputType="textPassword"
@@ -133,7 +133,7 @@
         android:layout_marginEnd="50dp"
         android:background="@drawable/rounded_login"
         android:backgroundTint="#FFFF3B"
-        android:text="Login"
+        android:text="Masuk"
         android:textColor="#000000"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -150,8 +150,8 @@
         android:layout_marginEnd="50dp"
         android:clickable="true"
         android:focusable="true"
-        android:gravity="left"
-        android:text="Make a New Account"
+        android:gravity="center"
+        android:text="Buat Akun Baru Disini"
         android:textColor="#FFFF00"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -159,17 +159,20 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/Btnlogin" />
 
+
     <Button
         android:id="@+id/admin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:text="Admin"
-        android:backgroundTint="@color/Blue_default"
+        android:layout_width="143dp"
+        android:layout_height="51dp"
+        android:layout_marginBottom="30dp"
         android:background="@drawable/rounded_login"
-        android:layout_margin="10dp"/>
-
+        android:backgroundTint="#FFFF3B"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:text="Administrator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/about2"
+        app:layout_constraintStart_toEndOf="@+id/help2" />
 
     <ImageButton
         android:id="@+id/help2"
