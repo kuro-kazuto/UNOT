@@ -5,8 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DataDiri"
-    >
+    tools:context=".StartQuiz"
+    android:background="@drawable/third_gradient">
 
   <TextView
       android:id="@+id/pilihan"
@@ -39,30 +39,45 @@
       android:layout_width="326dp"
       android:layout_height="183dp"
       android:layout_marginStart="48dp"
-      android:layout_marginTop="56dp"
+      android:layout_marginTop="30dp"
       android:layout_marginEnd="48dp"
       android:gravity="center"
       android:orientation="vertical"
-
+      android:src="@mipmap/logo"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-       />
+      app:layout_constraintTop_toTopOf="parent" />
 
   <TextView
-      android:id="@+id/textlogotoefl"
+      android:id="@+id/textlogo"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
       android:layout_marginStart="30dp"
+      android:layout_marginTop="10dp"
       android:layout_marginEnd="30dp"
-      android:layout_marginBottom="30dp"
-      android:text="UNTIRTA ONLINE TEST"
-      android:textColor="@color/black"
+      android:text="APAKAH ANDA SUDAH SIAP ?"
+      android:textColor="@color/white"
       android:textSize="18sp"
       android:textStyle="bold"
-      app:layout_constraintBottom_toTopOf="@+id/edit"
       app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent" />
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/net" />
+
+  <TextView
+      android:id="@+id/textlogo1"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginStart="30dp"
+      android:layout_marginTop="5dp"
+      android:layout_marginEnd="30dp"
+      android:text="SILAHKAN ISI DATA ANDA"
+      android:textColor="@color/white"
+      android:textSize="18sp"
+      android:textStyle="bold"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintHorizontal_bias="0.527"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintTop_toBottomOf="@+id/textlogo" />
 
   <EditText
       android:id="@+id/edit"
@@ -72,34 +87,21 @@
       android:layout_marginStart="30dp"
       android:layout_marginTop="30dp"
       android:layout_marginEnd="30dp"
-      android:background="@drawable/rounded"
+      android:background="@drawable/rounded_white"
       android:drawableStart="@drawable/ic_username"
       android:hint="  Input Your NIM !"
-      android:padding="10dp"
       android:inputType="number"
+      android:padding="10dp"
       android:paddingTop="@dimen/fab_margin"
       android:textColor="#000000"
       android:textColorHint="#68001064"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintHorizontal_bias="0.0"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toBottomOf="@+id/imgLogo"
+      app:layout_constraintTop_toBottomOf="@+id/textlogo1"
       tools:ignore="Autofill,HardcodedText" />
 
-  <ImageView
-      android:id="@+id/net_big"
-      android:layout_width="550dp"
-      android:layout_height="399dp"
-      android:layout_marginTop="400dp"
-      android:gravity="center"
-      android:orientation="vertical"
-
-      app:layout_constraintEnd_toEndOf="parent"
-      app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"
-      />
-
-  <Button
+  <ImageButton
       android:id="@+id/btnstart"
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"

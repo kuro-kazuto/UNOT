@@ -16,6 +16,7 @@
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/ic_username.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/ico_abt.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/drawable/ico_start.xml" value="0.2328125" />
         <entry key="app/src/main/res/drawable/rounded.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/rounded_login.xml" value="0.10729166666666666" />
         <entry key="app/src/main/res/drawable/rounded_white.xml" value="0.21197916666666666" />
@@ -25,6 +26,7 @@
         <entry key="app/src/main/res/layout/activity_blank404.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_buatakun.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_datadiri.xml" value="0.1046875" />
         <entry key="app/src/main/res/layout/activity_help.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_listening_direction.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />

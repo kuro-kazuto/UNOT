@@ -29,15 +29,18 @@
             android:name=".Help"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".AdminActivity"
-            android:exported="true" />
+            android:name=".StartQuiz"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Create_account"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Login"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".DataDiri" />
+        <activity
+            android:name=".DataDiri"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Splash"
             android:exported="true"

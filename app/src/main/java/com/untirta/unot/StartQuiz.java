@@ -3,6 +3,7 @@ package com.untirta.unot;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -20,12 +21,10 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class AdminActivity extends AppCompatActivity {
+public class StartQuiz extends AppCompatActivity {
     TextView tvdepartment;
 
-    Button btnstart;
-    ImageButton btnAbout;
-    ImageButton btnHelp;
+    ImageButton btnAbout, btnstart, btnHelp;
     EditText editText;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference().child("NIM");
     DatabaseReference dbAdmin = FirebaseDatabase.getInstance().getReference().child("AdminAktifasi");
@@ -33,10 +32,8 @@ public class AdminActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_startquiz);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-
 
         btnstart = findViewById(R.id.btnstart);
         btnAbout = findViewById(R.id.about);
@@ -51,7 +48,7 @@ public class AdminActivity extends AppCompatActivity {
         btnAbout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent about = new Intent(AdminActivity.this, Help.class);
+                Intent about = new Intent(StartQuiz.this, Help.class);
                 startActivity(about);
             }
         });
@@ -59,24 +56,72 @@ public class AdminActivity extends AppCompatActivity {
         btnHelp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent help = new Intent(AdminActivity.this, Help.class);
+                Intent help = new Intent(StartQuiz.this, Help.class);
                 startActivity(help);
             }
         });
 
         btnstart.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                String NIM = editText.getText().toString();
+            public void onClick(View v) {
+                Dialog dialog = new Dialog(StartQuiz.this);
 
+                //Memasang Title / Judul pada Custom Dialog
+                dialog.setTitle("Reading Text");
+
+                //Memasang Desain Layout untuk Custom Dialog
+                dialog.setContentView(R.layout.dialog_jurusan);
+
+                Button JTE = dialog.findViewById(R.id.TE);
+                Button JTM = dialog.findViewById(R.id.TM);
+                Button JTS = dialog.findViewById(R.id.TS);
+                Button JTK = dialog.findViewById(R.id.TK);
+                Button JTMET = dialog.findViewById(R.id.TMetal);
+                Button JTI = dialog.findViewById(R.id.TI);
+
+                JTE.setOnClickListener(v1-> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Elektro";
+                    goTo();
+                });
+                JTM.setOnClickListener(v2 -> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Mesin";
+                    goTo();
+                });
+                JTS.setOnClickListener(v3 -> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Sipil";
+                    goTo();
+                });
+                JTK.setOnClickListener(v4 -> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Kimia";
+                    goTo();
+                });
+                JTMET.setOnClickListener(v5 -> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Metalurgi";
+                    goTo();
+                });
+                JTI.setOnClickListener(v6 -> {
+                    dialog.dismiss();
+                    String jurusan = "Teknik Industri";
+                    goTo();
+                });
+
+
+
+                dialog.show();
+            }
+
+            private void goTo() {
+                String NIM = editText.getText().toString();
                 if(NIM.length()==10){
                     AddNIM();
                 }else {
-                    Toast.makeText(AdminActivity.this, "NIM Must Be 10 Digit", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(StartQuiz.this, "NIM Must Be 10 Digit", Toast.LENGTH_SHORT).show();
                 }
-
-
-
             }
         });
 
@@ -91,10 +136,11 @@ public class AdminActivity extends AppCompatActivity {
     private void AddNIM(){
         String name = editText.getText().toString();
         String pilihan = tvdepartment.getText().toString();
-        Intent intent = new Intent(AdminActivity.this, Listening_direction.class);
+        Intent intent = new Intent(StartQuiz.this, Listening_direction.class);
         intent.putExtra("pilihan", pilihan);
         intent.putExtra("name", name);
-        Intent intent1 = new Intent(AdminActivity.this, Blank404.class);
+        Intent intent1 = new Intent(StartQuiz.this, Blank404.class);
+       // intent.putExtra("pilihan", jurusan);
 
 
         if(!TextUtils.isEmpty(name)){
@@ -108,7 +154,7 @@ public class AdminActivity extends AppCompatActivity {
                         NIM value = snapshot.child(name).getValue(NIM.class);
 
                         if (value.getNIM().equals(name)) {
-                            Toast.makeText(AdminActivity.this, "NIM Alredy Exist", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(StartQuiz.this, "NIM Alredy Exist", Toast.LENGTH_SHORT).show();
                         }
                     }else {
                         dbAdmin.addListenerForSingleValueEvent(new ValueEventListener() {
