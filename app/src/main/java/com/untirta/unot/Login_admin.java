@@ -1,8 +1,5 @@
 package com.untirta.unot;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
@@ -11,6 +8,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -96,7 +96,7 @@ public class Login_admin extends AppCompatActivity {
                     if (userName.equals(EUser)){
                         String passWord = user.getPassA();
                         if (passWord.equals(EPass)){
-                            Intent intent = new Intent(Login_admin.this, Admin_Remote.class);
+                            Intent intent = new Intent(Login_admin.this, Dashboard_admin.class);
                             startActivity(intent);
                         }else {
                             Toast.makeText(Login_admin.this, "Wrong Password", Toast.LENGTH_SHORT).show();

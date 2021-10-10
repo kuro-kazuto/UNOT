@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT">
         <activity
+            android:name=".Dashboard_admin"
+            android:exported="true" />
+        <activity
             android:name=".Activation"
             android:exported="true" />
         <activity
@@ -18,7 +21,7 @@
         <activity
             android:name=".Login_admin"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Blank404"
             android:exported="true" />
