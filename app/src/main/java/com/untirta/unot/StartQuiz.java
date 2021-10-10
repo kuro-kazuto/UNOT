@@ -82,35 +82,51 @@ public class StartQuiz extends AppCompatActivity {
                 JTE.setOnClickListener(v1-> {
                     dialog.dismiss();
                     String jurusan = "Teknik Elektro";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
                 JTM.setOnClickListener(v2 -> {
                     dialog.dismiss();
                     String jurusan = "Teknik Mesin";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
                 JTS.setOnClickListener(v3 -> {
                     dialog.dismiss();
                     String jurusan = "Teknik Sipil";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
                 JTK.setOnClickListener(v4 -> {
                     dialog.dismiss();
                     String jurusan = "Teknik Kimia";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
                 JTMET.setOnClickListener(v5 -> {
                     dialog.dismiss();
                     String jurusan = "Teknik Metalurgi";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
                 JTI.setOnClickListener(v6 -> {
                     dialog.dismiss();
                     String jurusan = "Teknik Industri";
+                    Intent sendtext = new Intent(StartQuiz.this, Listening_direction.class);
+                    startActivity(sendtext);
+                    sendtext.putExtra("jurusan", jurusan);
                     goTo();
                 });
-
-
 
                 dialog.show();
             }
@@ -140,7 +156,6 @@ public class StartQuiz extends AppCompatActivity {
         intent.putExtra("pilihan", pilihan);
         intent.putExtra("name", name);
         Intent intent1 = new Intent(StartQuiz.this, Blank404.class);
-       // intent.putExtra("pilihan", jurusan);
 
 
         if(!TextUtils.isEmpty(name)){
