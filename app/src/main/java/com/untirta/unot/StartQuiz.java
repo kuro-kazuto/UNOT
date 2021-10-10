@@ -86,7 +86,7 @@ public class StartQuiz extends AppCompatActivity {
                 });
                 JTM.setOnClickListener(v2 -> {
                     dialog.dismiss();
-                    String jurusan = "Teknik Mesin";);
+                    String jurusan = "Teknik Mesin";
                     goTo();
                 });
                 JTS.setOnClickListener(v3 -> {
