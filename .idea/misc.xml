@@ -24,13 +24,14 @@
         <entry key="app/src/main/res/layout/activity_admin_remote.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_blank404.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_buatakun.xml" value="0.19583333333333333" />
-        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_help.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_listening_direction.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login_admin.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/dialog_jurusan.xml" value="0.42857142857142855" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21197916666666666" />
       </map>
     </option>

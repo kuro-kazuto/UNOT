@@ -169,7 +169,7 @@ public class Login extends AppCompatActivity {
                                         Bundle bundle = new Bundle();
                                         bundle.putString("email", emailUser);
                                         bundle.putString("pass", passwordUser);
-                                        Intent intent = new Intent(new Intent(Login.this, Dashboard.class).putExtra("emailpass", bundle));
+                                        Intent intent = new Intent(new Intent(Login.this, DataDiri.class).putExtra("emailpass", bundle));
                                         startActivity(intent);
 
                                         finish();
