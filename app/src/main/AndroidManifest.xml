@@ -19,7 +19,7 @@
             android:name=".Admin_Remote"
             android:exported="true" />
         <activity
-            android:name=".Login_admin"
+            android:name=".UserAdmin.Login_admin"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
@@ -36,10 +36,10 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Create_account"
+            android:name=".UserAdmin.Create_account"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Login"
+            android:name=".UserAdmin.Login"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".DataDiri"

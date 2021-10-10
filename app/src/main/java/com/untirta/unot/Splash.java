@@ -8,6 +8,8 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.untirta.unot.UserAdmin.Login;
+
 public class Splash extends AppCompatActivity {
 
     //4000=4 detik

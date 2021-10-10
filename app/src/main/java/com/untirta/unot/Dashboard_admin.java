@@ -26,7 +26,7 @@ public class Dashboard_admin extends AppCompatActivity {
         btnNilai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dashboard_admin.this, MainActivity.class);
+                Intent intent = new Intent(Dashboard_admin.this, Listening_direction.class);
                 startActivity(intent);
             }
         });

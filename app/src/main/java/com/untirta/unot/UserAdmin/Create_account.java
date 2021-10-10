@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.UserAdmin;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.untirta.unot.R;
 
 public class Create_account extends AppCompatActivity implements View.OnClickListener{
 
