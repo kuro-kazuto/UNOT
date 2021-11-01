@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.UserPhoto;
 
 import android.os.Bundle;
 
@@ -12,13 +12,15 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.untirta.unot.R;
+import com.untirta.unot.UserPhoto.ImageAdapter;
 
 import java.util.ArrayList;
 
 public class DownloadUploadedImages extends AppCompatActivity {
 
     private ArrayList<String> urlList = new ArrayList<>();
-    private  ImageAdapter imageAdapter;
+    private ImageAdapter imageAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

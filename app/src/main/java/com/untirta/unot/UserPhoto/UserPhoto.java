@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.UserPhoto;
 
 import android.Manifest;
 import android.app.Activity;
@@ -12,7 +12,6 @@ import android.os.Bundle;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
@@ -31,9 +30,10 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.mikhaellopez.circularimageview.CircularImageView;
+import com.untirta.unot.MainActivity;
+import com.untirta.unot.R;
 
 import java.io.ByteArrayOutputStream;
-import java.util.Objects;
 import java.util.UUID;
 
 public class UserPhoto extends AppCompatActivity {
@@ -80,7 +80,7 @@ public class UserPhoto extends AppCompatActivity {
                     Toast.makeText(UserPhoto.this, "Tidak Ada Foto!, Harap Tambah Foto Untuk Melanjutkan", Toast.LENGTH_SHORT).show();
                 } else{
                     uploadImage();
-                    Intent pindahKeDashboard = new Intent(UserPhoto.this, StartQuiz.class);
+                    Intent pindahKeDashboard = new Intent(UserPhoto.this, MainActivity.class);
                     startActivity(pindahKeDashboard);
                 }
             }

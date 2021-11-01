@@ -23,8 +23,9 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.untirta.unot.Help;
+import com.untirta.unot.MainActivity;
 import com.untirta.unot.R;
-import com.untirta.unot.UserPhoto;
+import com.untirta.unot.UserPhoto.UserPhoto;
 
 import java.util.Objects;
 
@@ -172,7 +173,7 @@ public class Login extends AppCompatActivity {
                                         Bundle bundle = new Bundle();
                                         bundle.putString("email", emailUser);
                                         bundle.putString("pass", passwordUser);
-                                        Intent intent = new Intent(new Intent(Login.this, UserPhoto.class).putExtra("emailpass", bundle));
+                                        Intent intent = new Intent(new Intent(Login.this, MainActivity.class).putExtra("emailpass", bundle));
                                         startActivity(intent);
 
                                         finish();
