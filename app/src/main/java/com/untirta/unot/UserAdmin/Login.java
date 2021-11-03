@@ -174,12 +174,12 @@ public class Login extends AppCompatActivity {
                                     // ketika berhasil maka pindah ACTIVITY
                                     else {
                                         String UN = username.getText().toString();
-                                        String Uname = UN.substring(0,UN.indexOf("@"));
+                                        String USname = UN.substring(0,UN.indexOf("@"));
                                         Bundle bundle = new Bundle();
                                         bundle.putString("email", emailUser);
                                         bundle.putString("pass", passwordUser);
-                                        Intent intent = new Intent(new Intent(Login.this, MainActivity.class).putExtra("emailpass", bundle));
-                                        intent.putExtra("Uname", Uname);
+                                        Intent intent = new Intent(new Intent(Login.this, UserPhoto.class).putExtra("emailpass", bundle));
+                                        intent.putExtra("USname", USname);
                                         startActivity(intent);
                                         finish();
                                     }

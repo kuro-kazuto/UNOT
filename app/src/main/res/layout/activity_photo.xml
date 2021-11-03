@@ -22,7 +22,21 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/jurusan"
+            android:id="@+id/greeting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="Ambil Foto Wajah Anda "
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="HardcodedText"/>
+
+        <TextView
+            android:id="@+id/ambilfoto"
             android:layout_width="match_parent"
             android:layout_height="100dp"
             android:text="Ambil Foto Wajah Anda "

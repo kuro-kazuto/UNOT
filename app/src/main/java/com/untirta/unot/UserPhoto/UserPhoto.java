@@ -13,6 +13,7 @@ import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -65,6 +66,9 @@ public class UserPhoto extends AppCompatActivity {
         imagePreviw = findViewById(R.id.imagePreview);
         progressBar = findViewById(R.id.progressBar);
 
+        TextView NIM = findViewById(R.id.greeting);
+        NIM.setText(getIntent().getStringExtra("USname"));
+
         selectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -80,7 +84,9 @@ public class UserPhoto extends AppCompatActivity {
                     Toast.makeText(UserPhoto.this, "Tidak Ada Foto!, Harap Tambah Foto Untuk Melanjutkan", Toast.LENGTH_SHORT).show();
                 } else{
                     uploadImage();
+                    String Uname = NIM.getText().toString();
                     Intent pindahKeDashboard = new Intent(UserPhoto.this, MainActivity.class);
+                    pindahKeDashboard.putExtra("Uname", Uname);
                     startActivity(pindahKeDashboard);
                 }
             }
