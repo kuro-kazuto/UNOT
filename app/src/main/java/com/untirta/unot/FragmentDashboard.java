@@ -33,7 +33,7 @@ public class FragmentDashboard extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("Beranda");
         TextView NIM = view.findViewById(R.id.greeting);
-        NIM.setText(getActivity().getIntent().getStringExtra("Uname"));
+        NIM.setText("Hai " + getActivity().getIntent().getStringExtra("Uname") + ",");
 
     }
 }

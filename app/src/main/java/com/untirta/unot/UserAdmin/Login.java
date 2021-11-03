@@ -142,6 +142,7 @@ public class Login extends AppCompatActivity {
                 final String emailUser = username.getText().toString().trim();
                 final String passwordUser = password.getText().toString().trim();
 
+
                 //validasi email dan password
                 // jika email kosong
                 if (emailUser.isEmpty()) {
@@ -172,10 +173,11 @@ public class Login extends AppCompatActivity {
                                     }
                                     // ketika berhasil maka pindah ACTIVITY
                                     else {
+                                        String UN = username.getText().toString();
+                                        String Uname = UN.substring(0,UN.indexOf("@"));
                                         Bundle bundle = new Bundle();
                                         bundle.putString("email", emailUser);
                                         bundle.putString("pass", passwordUser);
-                                        String Uname = username.getText().toString();
                                         Intent intent = new Intent(new Intent(Login.this, MainActivity.class).putExtra("emailpass", bundle));
                                         intent.putExtra("Uname", Uname);
                                         startActivity(intent);
