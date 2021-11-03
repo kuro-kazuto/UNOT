@@ -7,18 +7,7 @@
     android:background="@drawable/second_gradient"
     tools:context=".Dashboard_admin">
 
-    <ImageView
-        android:id="@+id/net_big"
-        android:layout_width="550dp"
-        android:layout_height="399dp"
-        android:layout_marginTop="456dp"
-        android:gravity="center"
-        android:orientation="vertical"
 
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.503"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/dashboardAdmin"
@@ -43,23 +32,32 @@
         tools:ignore="HardcodedText,MissingConstraints"
         app:layout_constraintStart_toStartOf="parent"
        />
+
     <Button
         android:id="@+id/btn_remote"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/dashboardAdmin"
+        android:layout_margin="10dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
         android:text="Remote"
-        android:layout_margin="10dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/dashboardAdmin" />
 
     <Button
         android:id="@+id/btn_nilai"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/btn_remote"
+        android:layout_margin="10dp"
+        android:layout_marginStart="30dp"
         android:layout_marginTop="100dp"
+        android:layout_marginEnd="30dp"
         android:text="nilai"
-        android:layout_margin="10dp"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_remote" />
 
 
 
