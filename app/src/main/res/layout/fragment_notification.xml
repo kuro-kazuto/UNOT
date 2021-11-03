@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/third_gradient"
+    android:background="@color/white"
     tools:context=".FragmentNotification">
 
     <!-- TODO: Update blank fragment layout -->
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
-        android:textColor="@color/white"
-        android:text="Notification" />
+        android:textColor="@color/black"
+        android:text="Under Construction" />
 
 </FrameLayout>

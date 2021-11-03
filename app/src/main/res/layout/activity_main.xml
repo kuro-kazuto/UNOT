@@ -14,16 +14,9 @@
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBarLayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
-            <androidx.appcompat.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"
-                android:background="@color/primary"
-                app:contentInsetStartWithNavigation="0dp"
-                app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
 
         </com.google.android.material.appbar.AppBarLayout>
 
@@ -32,6 +25,16 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/third_gradient"
+            app:contentInsetStartWithNavigation="0dp"
+            app:layout_anchor="@+id/appBarLayout"
+            app:layout_anchorGravity="center"
+            app:popupTheme="@style/Theme.AppCompat.NoActionBar" />
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
     <com.google.android.material.navigation.NavigationView
@@ -40,7 +43,7 @@
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="false"
-        android:background="@color/grey"
+        android:background="@drawable/third_gradient"
         app:headerLayout="@layout/layout_header_drawer"
         app:menu="@menu/menu_navigation" />
 </androidx.drawerlayout.widget.DrawerLayout>

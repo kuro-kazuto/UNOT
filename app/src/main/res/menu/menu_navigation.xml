@@ -7,15 +7,18 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_home"
-            android:title="Dashboard" />
+            android:title="Beranda"
+            android:iconTint="@color/white"/>
         <item
             android:id="@+id/nav_account"
             android:icon="@drawable/ic_account_circle"
-            android:title="My Accout" />
+            android:title="Akun"
+            android:iconTint="@color/white"/>
         <item
             android:id="@+id/nav_notification"
             android:icon="@drawable/ic_feed"
-            android:title="Notification" />
+            android:title="Berita"
+            android:iconTint="@color/white"/>
     </group>
     <group
         android:id="@+id/grp_2"
@@ -23,11 +26,13 @@
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
-            android:title="Settings" />
+            android:title="Pengaturan"
+            android:iconTint="@color/white"/>
         <item
             android:id="@+id/nav_help"
             android:icon="@drawable/ic_help"
-            android:title="Help" />
+            android:title="Bantuan"
+            android:iconTint="@color/white"/>
     </group>
 
 </menu>

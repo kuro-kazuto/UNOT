@@ -32,6 +32,6 @@ public class FragmentNotification extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        getActivity().setTitle("Notification");
+        getActivity().setTitle("Berita");
     }
 }
