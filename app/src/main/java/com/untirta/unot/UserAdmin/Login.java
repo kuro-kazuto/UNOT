@@ -22,6 +22,7 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
+import com.untirta.unot.Admin_Remote;
 import com.untirta.unot.Help;
 import com.untirta.unot.MainActivity;
 import com.untirta.unot.R;
@@ -80,7 +81,7 @@ public class Login extends AppCompatActivity {
         btnlogin = findViewById(R.id.Btnlogin);
         btnAdmin = findViewById(R.id.admin);
         btnAdmin.setOnClickListener(v -> {
-            Intent mimin = new Intent(Login.this, Login_admin.class);
+            Intent mimin = new Intent(Login.this, Admin_Remote.class);
             startActivity(mimin);
         });
         auth = FirebaseAuth.getInstance();
@@ -123,6 +124,7 @@ public class Login extends AppCompatActivity {
         });
     }
     //-------------------------------------------------------------------------
+
 
 
     //ON CLICK LISTENER UNTUK LOGIN DAN PINDAH ACTIVITY
@@ -173,9 +175,10 @@ public class Login extends AppCompatActivity {
                                         Bundle bundle = new Bundle();
                                         bundle.putString("email", emailUser);
                                         bundle.putString("pass", passwordUser);
+                                        String Uname = username.getText().toString();
                                         Intent intent = new Intent(new Intent(Login.this, MainActivity.class).putExtra("emailpass", bundle));
+                                        intent.putExtra("Uname", Uname);
                                         startActivity(intent);
-
                                         finish();
                                     }
                                 }

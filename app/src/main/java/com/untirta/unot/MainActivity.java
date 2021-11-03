@@ -2,6 +2,7 @@ package com.untirta.unot;
 
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.widget.TextView;
 
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,6 +25,7 @@ public class MainActivity extends AppCompatActivity
 
     Fragment fragment;
     FragmentTransaction transaction;
+    TextView NIM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +45,9 @@ public class MainActivity extends AppCompatActivity
 
         navigationView.getMenu().getItem(0).setChecked(true);
         firstFragmentDisplay(R.id.nav_home);
+
+        //NIM = findViewById(R.id.greeting);
+        //NIM.setText(getIntent().getStringExtra("Uname"));
     }
 
     private void firstFragmentDisplay(int itemId) {

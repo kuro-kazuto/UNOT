@@ -100,7 +100,7 @@ public class Login_admin extends AppCompatActivity {
                     if (userName.equals(EUser)){
                         String passWord = user.getPassA();
                         if (passWord.equals(EPass)){
-                            Intent intent = new Intent(Login_admin.this, Dashboard_admin.class);
+                            Intent intent = new Intent(Login_admin.this, Admin_Remote.class);
                             startActivity(intent);
                         }else {
                             Toast.makeText(Login_admin.this, "Wrong Password", Toast.LENGTH_SHORT).show();
