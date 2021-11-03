@@ -112,6 +112,7 @@ public class UserPhoto extends AppCompatActivity {
                 Date date = Calendar.getInstance().getTime();
                 DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
                 String strDate = dateFormat.format(date);
+
                 TextView Nama = findViewById(R.id.greeting);
                 Nama.setText(getIntent().getStringExtra("USname"));
                 StorageReference ref = storageReference.child("images/"+ Nama.getText().toString() +" - "+ strDate);
