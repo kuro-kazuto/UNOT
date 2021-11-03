@@ -110,7 +110,7 @@ public class UserPhoto extends AppCompatActivity {
             if(filePath != null) {
                 progressBar.setVisibility(View.VISIBLE);
                 Date date = new Date();
-                DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
+                DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
                 String strDate = dateFormat.format(date);
 
 
