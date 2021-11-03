@@ -35,6 +35,10 @@ import com.untirta.unot.MainActivity;
 import com.untirta.unot.R;
 
 import java.io.ByteArrayOutputStream;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
 import java.util.UUID;
 
 public class UserPhoto extends AppCompatActivity {
@@ -105,7 +109,12 @@ public class UserPhoto extends AppCompatActivity {
     private void uploadImage() {
             if(filePath != null) {
                 progressBar.setVisibility(View.VISIBLE);
-                StorageReference ref = storageReference.child("images/"+ UUID.randomUUID().toString());
+                Date date = Calendar.getInstance().getTime();
+                DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+                String strDate = dateFormat.format(date);
+                TextView Nama = findViewById(R.id.greeting);
+                Nama.setText(getIntent().getStringExtra("USname"));
+                StorageReference ref = storageReference.child("images/"+ Nama.getText().toString() +" - "+ strDate);
                 ref.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
