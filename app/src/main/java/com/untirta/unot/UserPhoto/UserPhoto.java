@@ -109,13 +109,15 @@ public class UserPhoto extends AppCompatActivity {
     private void uploadImage() {
             if(filePath != null) {
                 progressBar.setVisibility(View.VISIBLE);
-                Date date = Calendar.getInstance().getTime();
-                DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
+                Date date = new Date();
+                DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy hh:mm:ss");
                 String strDate = dateFormat.format(date);
+
 
                 TextView Nama = findViewById(R.id.greeting);
                 Nama.setText(getIntent().getStringExtra("USname"));
-                StorageReference ref = storageReference.child("images/"+ Nama.getText().toString() +" - "+ strDate);
+                StorageReference ref = storageReference.child("images/"+ Nama.getText().toString());
+                StorageReference ref1 = storageReference.child("history/" + Nama.getText().toString() +" - "+ strDate);
                 ref.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
                     @Override
                     public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
@@ -134,6 +136,21 @@ public class UserPhoto extends AppCompatActivity {
                         progressBar.setVisibility(View.GONE);
                         Toast.makeText(UserPhoto.this, "Image uploaded failed", Toast.LENGTH_SHORT).show();
                     }
+                });
+
+                ref1.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        ref1.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                            @Override
+                            public void onSuccess(Uri uri) {
+                                databaseReference.push().setValue(uri.toString());
+                            }
+                        });
+                    }
+                }).addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception e) {}
                 });
             }
     }
