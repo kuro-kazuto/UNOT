@@ -31,7 +31,6 @@ public class Admin_Remote extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("AdminAktifasi");
         btnAdminOn = findViewById(R.id.tmbl);
         btnAdminOff = findViewById(R.id.tmbl2);
-        textAdmin = findViewById(R.id.teks);
         String AktifasiAdmin = "Admin";
 
         btnAdminOn.setOnClickListener(new View.OnClickListener() {
@@ -72,7 +71,7 @@ public class Admin_Remote extends AppCompatActivity {
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.child(AktifasiAdmin).exists()) {
                     Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
-                    textAdmin.setText(value.getValueA());
+
                 }
             }
 

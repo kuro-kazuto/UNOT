@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.untirta.unot.Admin_Remote;
+import com.untirta.unot.Admin_control;
 import com.untirta.unot.AkunAdmin;
 import com.untirta.unot.Dashboard_admin;
 import com.untirta.unot.R;
@@ -100,7 +101,7 @@ public class Login_admin extends AppCompatActivity {
                     if (userName.equals(EUser)){
                         String passWord = user.getPassA();
                         if (passWord.equals(EPass)){
-                            Intent intent = new Intent(Login_admin.this, Admin_Remote.class);
+                            Intent intent = new Intent(Login_admin.this, Dashboard_admin.class);
                             startActivity(intent);
                         }else {
                             Toast.makeText(Login_admin.this, "Wrong Password", Toast.LENGTH_SHORT).show();

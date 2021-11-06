@@ -4,12 +4,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Dashboard_admin extends AppCompatActivity {
 
-    Button btnRemote, btnNilai;
+    ImageView btnRemote, btnNilai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

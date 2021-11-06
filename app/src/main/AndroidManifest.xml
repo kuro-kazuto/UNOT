@@ -15,12 +15,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT">
         <activity
+            android:name=".UnderConstruction"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Dashboard_admin"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
         <activity
             android:name=".Activation"
             android:exported="true" />
