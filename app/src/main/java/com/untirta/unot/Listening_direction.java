@@ -13,7 +13,7 @@ public class Listening_direction extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_listening_direction);
         jajal = findViewById(R.id.test);
-        jajal.setText(getIntent().getStringExtra("jurusan"));
+        jajal.setText("Ganyu Wangy");
 
     }
 }
