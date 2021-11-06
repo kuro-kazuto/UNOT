@@ -60,7 +60,7 @@ public class UserPhoto extends AppCompatActivity {
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         FirebaseStorage firebaseStorage = FirebaseStorage.getInstance();
-         databaseReference =  database.getReference().child("user_images");
+        databaseReference =  database.getReference().child("user_images");
         storageReference = firebaseStorage.getReference();
 
         CircularImageView selectButton = findViewById(R.id.imagePreview);
@@ -107,35 +107,52 @@ public class UserPhoto extends AppCompatActivity {
     }
 
     private void uploadImage() {
-            if(filePath != null) {
-                progressBar.setVisibility(View.VISIBLE);
-                Date date = Calendar.getInstance().getTime();
-                DateFormat dateFormat = new SimpleDateFormat("yyyy-mm-dd");
-                String strDate = dateFormat.format(date);
+        if(filePath != null) {
+            progressBar.setVisibility(View.VISIBLE);
+            Date date = new Date();
+            DateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+            String strDate = dateFormat.format(date);
 
-                TextView Nama = findViewById(R.id.greeting);
-                Nama.setText(getIntent().getStringExtra("USname"));
-                StorageReference ref = storageReference.child("images/"+ Nama.getText().toString() +" - "+ strDate);
-                ref.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
-                    @Override
-                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
-                        ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
-                            @Override
-                            public void onSuccess(Uri uri) {
-                                databaseReference.push().setValue(uri.toString());
-                                Toast.makeText(UserPhoto.this, "Image uploaded successfully", Toast.LENGTH_SHORT).show();
-                                progressBar.setVisibility(View.GONE);
-                            }
-                        });
-                    }
-                }).addOnFailureListener(new OnFailureListener() {
-                    @Override
-                    public void onFailure(@NonNull Exception e) {
-                        progressBar.setVisibility(View.GONE);
-                        Toast.makeText(UserPhoto.this, "Image uploaded failed", Toast.LENGTH_SHORT).show();
-                    }
-                });
-            }
+
+            TextView Nama = findViewById(R.id.greeting);
+            Nama.setText(getIntent().getStringExtra("USname"));
+            StorageReference ref = storageReference.child("images/"+ Nama.getText().toString());
+            StorageReference ref1 = storageReference.child("history/" + Nama.getText().toString() +" - "+ strDate);
+            ref.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    ref.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            databaseReference.push().setValue(uri.toString());
+                            Toast.makeText(UserPhoto.this, "Image uploaded successfully", Toast.LENGTH_SHORT).show();
+                            progressBar.setVisibility(View.GONE);
+                        }
+                    });
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {
+                    progressBar.setVisibility(View.GONE);
+                    Toast.makeText(UserPhoto.this, "Image uploaded failed", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            ref1.putFile(filePath).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                @Override
+                public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                    ref1.getDownloadUrl().addOnSuccessListener(new OnSuccessListener<Uri>() {
+                        @Override
+                        public void onSuccess(Uri uri) {
+                            databaseReference.push().setValue(uri.toString());
+                        }
+                    });
+                }
+            }).addOnFailureListener(new OnFailureListener() {
+                @Override
+                public void onFailure(@NonNull Exception e) {}
+            });
+        }
     }
     private void showImageSelectedDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
@@ -170,7 +187,7 @@ public class UserPhoto extends AppCompatActivity {
     private void checkCameraPermission() {
         if(ContextCompat.checkSelfPermission(UserPhoto.this, Manifest.permission.CAMERA)
                 != PackageManager.PERMISSION_GRANTED
-            || ContextCompat.checkSelfPermission(UserPhoto.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
+                || ContextCompat.checkSelfPermission(UserPhoto.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 != PackageManager.PERMISSION_GRANTED ) {
             ActivityCompat.requestPermissions(UserPhoto.this, new String[] {
                     Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE
