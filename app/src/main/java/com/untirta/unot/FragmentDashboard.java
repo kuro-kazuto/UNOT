@@ -78,7 +78,7 @@ public class FragmentDashboard extends Fragment {
                                 dialog.dismiss();
                             }
                             if (ValueA.equals(Off)){
-                                Intent intent = new Intent(getActivity(), UnderConstruction.class);
+                                Intent intent = new Intent(getActivity(), Blank404.class);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -131,7 +131,7 @@ public class FragmentDashboard extends Fragment {
                                 dialog.dismiss();
                             }
                             if (ValueA.equals(Off)){
-                                Intent intent = new Intent(getActivity(), UnderConstruction.class);
+                                Intent intent = new Intent(getActivity(), Blank404.class);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }

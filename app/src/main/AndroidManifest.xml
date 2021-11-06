@@ -40,7 +40,8 @@
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Blank404"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Listening_direction"
             android:exported="true" />
