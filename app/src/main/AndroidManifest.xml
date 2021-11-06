@@ -31,7 +31,9 @@
             android:exported="true" />
         <activity
             android:name=".Admin_Remote"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+
         <activity
             android:name=".UserAdmin.Login_admin"
             android:exported="true"

@@ -8,6 +8,7 @@ import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
@@ -19,7 +20,7 @@ import com.google.firebase.database.ValueEventListener;
 public class Admin_Remote extends AppCompatActivity {
 
     DatabaseReference databaseReference;
-    Button btnAdminOn, btnAdminOff;
+    ImageView btnAdminOn, btnAdminOff;
     TextView textAdmin;
 
     @Override
