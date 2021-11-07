@@ -30,7 +30,7 @@ public class Admin_nilai extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_adminnilai);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         recyclerView = findViewById(R.id.recview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

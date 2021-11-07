@@ -7,55 +7,67 @@
     android:background="@drawable/third_gradient"
     tools:context=".FragmentDashboard">
 
-    <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/userimg"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="30dp"
-        android:scaleType="centerCrop"
-        android:src="@mipmap/ico_square_mini"
-        app:layout_constraintBottom_toBottomOf="@+id/quotesforuser"
-        app:layout_constraintStart_toStartOf="parent" />
 
     <LinearLayout
         android:id="@+id/quotesforuser"
-        android:layout_width="284dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
-        android:orientation="vertical"
+        android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/Linear_dashboard"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/userimg">
+        app:layout_constraintStart_toStartOf="parent">
 
-        <TextView
-            android:id="@+id/greeting"
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/userimg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/ico_square_mini"
+            app:layout_constraintBottom_toBottomOf="@+id/quotesforuser"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Halo User,"
-            android:textColor="@color/white"
-            android:textSize="25dp" />
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/greeting2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Halo User,"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            android:visibility="gone"/>
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Halo User,"
+                android:textColor="@color/white"
+                android:textSize="25dp" />
 
-        <TextView
-            android:id="@+id/quotes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Siapkah Kamu Untuk Berkarya Hari Ini?"
-            android:textColor="@color/white"
-            android:textSize="15dp" />
+            <TextView
+                android:id="@+id/greeting2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Halo User,"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/quotes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="left"
+                android:text="Siapkah Kamu Untuk Berkarya Hari Ini?"
+                android:textColor="@color/white"
+                android:textSize="15dp" />
+        </LinearLayout>
+
 
     </LinearLayout>
 
