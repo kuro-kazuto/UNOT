@@ -3,7 +3,7 @@ package com.untirta.unot;
 public class Score {
 
     String userId;
-    String userName;
+    Long userName;
     String userScoreL;
     String userScoreS;
     String userScoreR;
@@ -13,7 +13,7 @@ public class Score {
 
     }
 
-    public Score(String userId, String userName, String userScoreL, String userScoreS, String userScoreR, String userScoreT) {
+    public Score(String userId, Long userName, String userScoreL, String userScoreS, String userScoreR, String userScoreT) {
         this.userId = userId;
         this.userName = userName;
         this.userScoreL = userScoreL;
@@ -30,11 +30,11 @@ public class Score {
         this.userId = userId;
     }
 
-    public String getUserName() {
+    public Long getUserName() {
         return userName;
     }
 
-    public void setUserName(String userName) {
+    public void setUserName(Long userName) {
         this.userName = userName;
     }
 
@@ -70,4 +70,5 @@ public class Score {
         this.userScoreT = userScoreT;
     }
 }
+
 
