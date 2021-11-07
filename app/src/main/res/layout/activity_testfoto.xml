@@ -4,18 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Listening_direction">
+    tools:context=".testfoto">
 
-    <TextView
-        android:id="@+id/test"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:textSize="50dp"
-        android:text="Hello World"/>
+
 
     <com.mikhaellopez.circularimageview.CircularImageView
-        android:id="@+id/usertest"
+        android:id="@+id/userpt"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginTop="48dp"
@@ -23,5 +17,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
