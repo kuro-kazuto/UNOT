@@ -66,6 +66,9 @@
         <activity
             android:name=".UserPhoto.DownloadUploadedImages"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".UserAdmin.Admin_nilai"
+            android:theme="@style/Theme.AppCompat.NoActionBar"
+            />
         <activity
             android:name=".Splash"
             android:exported="true"

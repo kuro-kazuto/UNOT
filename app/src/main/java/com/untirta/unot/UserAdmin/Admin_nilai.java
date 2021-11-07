@@ -20,7 +20,7 @@ import com.untirta.unot.Score;
 import java.util.ArrayList;
 import java.util.List;
 
-public class MainActivity2 extends AppCompatActivity {
+public class Admin_nilai extends AppCompatActivity {
 
     List<Score> fetchData;
     RecyclerView recyclerView;
