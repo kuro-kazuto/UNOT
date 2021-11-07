@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.AdminSide;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.untirta.unot.R;
+import com.untirta.unot.Score;
 
 import java.util.List;
 

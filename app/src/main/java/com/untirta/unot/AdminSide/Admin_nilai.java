@@ -1,4 +1,4 @@
-package com.untirta.unot.UserAdmin;
+package com.untirta.unot.AdminSide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,7 +13,6 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.untirta.unot.Adapter_getData;
 import com.untirta.unot.R;
 import com.untirta.unot.Score;
 

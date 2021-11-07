@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/third_gradient"
     android:orientation="vertical"
-    tools:context=".UserAdmin.Login">
+    tools:context=".AccountSide.Login">
 
 
     <ImageView

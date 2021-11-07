@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.AdminSide;
 
 public class Admin_control {
     String id;

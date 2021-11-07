@@ -8,7 +8,7 @@ import android.os.Handler;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.untirta.unot.UserAdmin.Login;
+import com.untirta.unot.AccountSide.Login;
 
 public class Splash extends AppCompatActivity {
 

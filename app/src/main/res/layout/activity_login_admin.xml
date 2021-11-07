@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/second_gradient"
-    tools:context=".UserAdmin.Login_admin">
+    tools:context=".AccountSide.Login_admin">
 
     <ImageView
         android:id="@+id/net_big"

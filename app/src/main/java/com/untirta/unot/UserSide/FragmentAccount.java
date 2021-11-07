@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.UserSide;
 
 
 import android.net.Uri;
@@ -19,6 +19,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.mikhaellopez.circularimageview.CircularImageView;
+import com.untirta.unot.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;

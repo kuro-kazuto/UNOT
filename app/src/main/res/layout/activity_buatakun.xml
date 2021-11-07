@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/third_gradient"
-    tools:context=".UserAdmin.Create_account"
+    tools:context=".AccountSide.Create_account"
     android:orientation="vertical">
 
 

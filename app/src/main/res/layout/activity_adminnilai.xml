@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/second_gradient"
-    tools:context=".UserAdmin.Admin_nilai">
+    tools:context=".AdminSide.Admin_nilai">
 
     <LinearLayout
         android:id="@+id/quotesforadmin"

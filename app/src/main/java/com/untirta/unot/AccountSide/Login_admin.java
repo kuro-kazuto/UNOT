@@ -1,4 +1,4 @@
-package com.untirta.unot.UserAdmin;
+package com.untirta.unot.AccountSide;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -17,10 +17,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
-import com.untirta.unot.Admin_Remote;
-import com.untirta.unot.Admin_control;
-import com.untirta.unot.AkunAdmin;
-import com.untirta.unot.Dashboard_admin;
+import com.untirta.unot.AdminSide.AkunAdmin;
+import com.untirta.unot.AdminSide.Dashboard_admin;
 import com.untirta.unot.R;
 
 public class Login_admin extends AppCompatActivity {

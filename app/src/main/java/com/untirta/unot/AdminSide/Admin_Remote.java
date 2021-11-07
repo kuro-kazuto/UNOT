@@ -1,13 +1,13 @@
-package com.untirta.unot;
+package com.untirta.unot.AdminSide;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -16,6 +16,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.untirta.unot.R;
 
 public class Admin_Remote extends AppCompatActivity {
 
@@ -37,6 +38,9 @@ public class Admin_Remote extends AppCompatActivity {
         btnAdminOn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Dialog dialog = new Dialog(Admin_Remote.this);
+                //Memasang Desain Layout untuk Custom Dialog
+                dialog.setContentView(R.layout.dialog_on);
                 String Aktifasi = "Admin";
                 String ValueA = "On";
                 String id = databaseReference.push().getKey();
@@ -45,14 +49,18 @@ public class Admin_Remote extends AppCompatActivity {
 
                 databaseReference.child(user.getAktifasi()).setValue(user);
 
-                Intent intent = new Intent(Admin_Remote.this, Activation.class);
-                startActivity(intent);
+                //Intent intent = new Intent(Admin_Remote.this, Activation.class);
+                //startActivity(intent);
+                dialog.show();
             }
         });
 
         btnAdminOff.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Dialog dialog = new Dialog(Admin_Remote.this);
+                //Memasang Desain Layout untuk Custom Dialog
+                dialog.setContentView(R.layout.dialog_off);
                 String Aktifasi = "Admin";
                 String ValueA = "Off";
                 String id = databaseReference.push().getKey();
@@ -61,8 +69,9 @@ public class Admin_Remote extends AppCompatActivity {
 
                 databaseReference.child(user.getAktifasi()).setValue(user);
 
-                Intent intent = new Intent(Admin_Remote.this, Activation.class);
-                startActivity(intent);
+                //Intent intent = new Intent(Admin_Remote.this, Activation.class);
+                //startActivity(intent);
+                dialog.show();
             }
         });
 
@@ -82,8 +91,17 @@ public class Admin_Remote extends AppCompatActivity {
             }
         });
 
+        dialogMethod();
 
 
+
+
+    }
+
+    private void dialogMethod() {
+        Dialog dialog = new Dialog(Admin_Remote.this);
+        //Memasang Desain Layout untuk Custom Dialog
+        dialog.setContentView(R.layout.dialog_jurusan);
 
     }
 }

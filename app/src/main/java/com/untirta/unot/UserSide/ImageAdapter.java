@@ -1,4 +1,4 @@
-package com.untirta.unot.UserPhoto;
+package com.untirta.unot.UserSide;
 
 import android.content.Context;
 import android.view.LayoutInflater;

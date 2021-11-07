@@ -1,4 +1,4 @@
-package com.untirta.unot.UserPhoto;
+package com.untirta.unot.UserSide;
 
 import android.os.Bundle;
 
@@ -13,7 +13,6 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.untirta.unot.R;
-import com.untirta.unot.UserPhoto.ImageAdapter;
 
 import java.util.ArrayList;
 

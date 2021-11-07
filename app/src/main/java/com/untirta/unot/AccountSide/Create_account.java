@@ -1,4 +1,4 @@
-package com.untirta.unot.UserAdmin;
+package com.untirta.unot.AccountSide;
 
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
@@ -167,7 +167,7 @@ public class Create_account extends AppCompatActivity implements View.OnClickLis
 
     // menulis ke Database
     private void writeNewAdmin(String userId, String name, String email) {
-        com.untirta.unot.Admin admin = new com.untirta.unot.Admin(name, email);
+        AdapterAccount admin = new AdapterAccount(name, email);
 
         mDatabase.child("Absen").child(name).setValue(admin);
     }

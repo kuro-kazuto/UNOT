@@ -22,22 +22,22 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".MainActivity"
+            android:name=".UserSide.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Dashboard_admin"
+            android:name=".AdminSide.Dashboard_admin"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Activation"
+            android:name=".AdminSide.Activation"
             android:exported="true" />
         <activity
-            android:name=".Admin_Remote"
+            android:name=".AdminSide.Admin_Remote"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".UserAdmin.Login_admin"
+            android:name=".AccountSide.Login_admin"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
@@ -51,23 +51,19 @@
             android:name=".Help"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".StartQuiz"
-            android:exported="true"
+            android:name=".AccountSide.Create_account"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".UserAdmin.Create_account"
+            android:name=".AccountSide.Login"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".UserAdmin.Login"
+            android:name=".UserSide.UserPhoto"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".UserPhoto.UserPhoto"
+            android:name=".UserSide.DownloadUploadedImages"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".UserPhoto.DownloadUploadedImages"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".UserAdmin.Admin_nilai"
+            android:name=".AdminSide.Admin_nilai"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".Splash"

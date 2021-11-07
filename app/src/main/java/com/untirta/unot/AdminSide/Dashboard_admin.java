@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.AdminSide;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.ImageView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.untirta.unot.UserAdmin.Admin_nilai;
+import com.untirta.unot.R;
 
 public class Dashboard_admin extends AppCompatActivity {
 

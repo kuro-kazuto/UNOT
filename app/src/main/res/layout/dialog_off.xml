@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/third_gradient">
+    android:background="@drawable/second_gradient">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -28,12 +28,12 @@
             android:textSize="20sp"
             android:gravity="center"
             android:textStyle="bold"
-            android:text="LAYANAN DIAKTIFKAN !"/>
+            android:text="LAYANAN DIMATIKAN !"/>
 
-       <ImageView
-           android:layout_width="match_parent"
-           android:layout_height="200dp"
-           android:src="@mipmap/surrender"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@mipmap/surrender"/>
 
         <TextView
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
             android:textSize="20sp"
             android:gravity="center"
             android:textStyle="bold"
-            android:text="LAYANAN DIAKTIFKAN !"/>
+            android:text="LAYANAN DIMATIKAN !"/>
 
 
 

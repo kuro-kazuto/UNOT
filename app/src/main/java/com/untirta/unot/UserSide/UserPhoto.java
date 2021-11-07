@@ -1,4 +1,4 @@
-package com.untirta.unot.UserPhoto;
+package com.untirta.unot.UserSide;
 
 import android.Manifest;
 import android.app.Activity;
@@ -31,15 +31,12 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.mikhaellopez.circularimageview.CircularImageView;
-import com.untirta.unot.MainActivity;
 import com.untirta.unot.R;
 
 import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
 import java.util.Date;
-import java.util.UUID;
 
 public class UserPhoto extends AppCompatActivity {
 
