@@ -11,22 +11,25 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
+import com.untirta.unot.Model.Soal;
 import com.untirta.unot.R;
 import com.untirta.unot.Model.StructureModel;
 import com.untirta.unot.Toggle.StructureToggleButton;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class StructureAdapter extends RecyclerView.Adapter {
 
     private Context mContext;
-    private ArrayList<StructureModel> mQuestionList;
+    List<Soal> mQuestionList;
 
 
-    public StructureAdapter(Context context, ArrayList<StructureModel> questionList) {
+    public StructureAdapter(Context context, List<Soal> questionList) {
         this.mContext = context;
         this.mQuestionList = questionList;
     }
+
 
     @NonNull
     @Override
@@ -40,13 +43,13 @@ public class StructureAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
-        final StructureModel question = mQuestionList.get(position);
+        final Soal question = mQuestionList.get(position);
         final QuestionViewHolder questionViewHolder = (QuestionViewHolder) holder;
         questionViewHolder.mQuestion.setText(question.getQuestion());
-        questionViewHolder.mRb1.setText(question.getOption1());
-        questionViewHolder.mRb2.setText(question.getOption2());
-        questionViewHolder.mRb3.setText(question.getOption3());
-        questionViewHolder.mRb4.setText(question.getOption4());
+        questionViewHolder.mRb1.setText(question.getAnswerA());
+        questionViewHolder.mRb2.setText(question.getAnswerB());
+        questionViewHolder.mRb3.setText(question.getAnswerC());
+        questionViewHolder.mRb4.setText(question.getAnswerD());
 
 
         ArrayList<RadioButton> radioButtons = questionViewHolder.mTableLayout.getChildren();
@@ -54,7 +57,7 @@ public class StructureAdapter extends RecyclerView.Adapter {
             rb.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    questionViewHolder.mTableLayout.checkAnswer(rb, question.getCorrectAnsNo(), mContext);
+                    questionViewHolder.mTableLayout.checkAnswer(rb, question.getJawabanBenar(), mContext);
                 }
             });
         }
