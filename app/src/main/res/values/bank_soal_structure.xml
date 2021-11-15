@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!--
+    BANK SOAL UNTUK STRUCTURE SECTION
+    -->
+
+    <!-- ============== Number 1 ================== -->
+    <!--QUESTION--> <string name="SQuestion1">(1) ... was in Bali to attend the international seminar</string>
+    <!--OPTION A--> <string name="SA1">A. Yesterday</string>
+    <!--OPTION B--> <string name="SB1">B. He</string>
+    <!--OPTION C--> <string name="SC1">C. This People</string>
+    <!--OPTION D--> <string name="SD1">D. His</string>
+    <!--ANSWER  --> <string name="SAns1">B. He</string>
+
+    <!-- ============== Number 2 ================== -->
+    <!--QUESTION--> <string name="SQuestion2">(2) The novels that she bought two days ago ... very interesting</string>
+    <!--OPTION A--> <string name="SA2">A. are</string>
+    <!--OPTION B--> <string name="SB2">B. was</string>
+    <!--OPTION C--> <string name="SC2">C. is People</string>
+    <!--OPTION D--> <string name="SD2">D. it is</string>
+    <!--ANSWER  --> <string name="SAns2">A. are</string>
+
+    <!-- ============== Number 3 ================== -->
+    <!--QUESTION--> <string name="SQuestion3">(3) One of the plans that they discussed in the meeting last week ... improving the product quality</string>
+    <!--OPTION A--> <string name="SA3">A. are</string>
+    <!--OPTION B--> <string name="SB3">B. will</string>
+    <!--OPTION C--> <string name="SC3">C. was</string>
+    <!--OPTION D--> <string name="SD3">D. is</string>
+    <!--ANSWER  --> <string name="SAns3">C. was</string>
+
+    <!-- ============== Number 4 ================== -->
+    <!--QUESTION--> <string name="SQuestion4">(4) How many ... are there in the waiting room?</string>
+    <!--OPTION A--> <string name="SA4">A. Water</string>
+    <!--OPTION B--> <string name="SB4">B. Doctor</string>
+    <!--OPTION C--> <string name="SC4">C. Girl</string>
+    <!--OPTION D--> <string name="SD4">D. Women</string>
+    <!--ANSWER  --> <string name="SAns4">D. Women</string>
+
+    <!-- ============== Number 5 ================== -->
+    <!--QUESTION--> <string name="SQuestion5">(5) There are ten ... on the table</string>
+    <!--OPTION A--> <string name="SA5">A. knives</string>
+    <!--OPTION B--> <string name="SB5">B. knife</string>
+    <!--OPTION C--> <string name="SC5">C. novel</string>
+    <!--OPTION D--> <string name="SD5">A. brief</string>
+    <!--ANSWER  --> <string name="SAns5">A. knives</string>
+
+    <!-- ============== Number 6 ================== -->
+    <!--QUESTION--> <string name="SQuestion6">(6) My father and my mother always ... to the office by car every day</string>
+    <!--OPTION A--> <string name="SA6">A. goes</string>
+    <!--OPTION B--> <string name="SB6">B. is</string>
+    <!--OPTION C--> <string name="SC6">C. would</string>
+    <!--OPTION D--> <string name="SD6">D. go</string>
+    <!--ANSWER  --> <string name="SAns6">D. go</string>
+
+    <!-- ============== Number 7 ================== -->
+    <!--QUESTION--> <string name="SQuestion7">(7) Mathematics ... not my favorite lesson</string>
+    <!--OPTION A--> <string name="SA7">A. are</string>
+    <!--OPTION B--> <string name="SB7">B. is</string>
+    <!--OPTION C--> <string name="SC7">C. were</string>
+    <!--OPTION D--> <string name="SD7">D. become</string>
+    <!--ANSWER  --> <string name="SAns7">B. is</string>
+
+    <!-- ============== Number 8 ================== -->
+    <!--QUESTION--> <string name="SQuestion8">(8) The tea ... very hot</string>
+    <!--OPTION A--> <string name="SA8">A. are</string>
+    <!--OPTION B--> <string name="SB8">B. were</string>
+    <!--OPTION C--> <string name="SC8">C. will</string>
+    <!--OPTION D--> <string name="SD8">D. is</string>
+    <!--ANSWER  --> <string name="SAns8">D. is</string>
+
+    <!-- ============== Number 9 ================== -->
+    <!--QUESTION--> <string name="SQuestion9">(9) Do you always have ... bread for breakfast every day?</string>
+    <!--OPTION A--> <string name="SA9">A. loaf</string>
+    <!--OPTION B--> <string name="SB9">B. a</string>
+    <!--OPTION C--> <string name="SC9">C. a loaf of</string>
+    <!--OPTION D--> <string name="SD9">D. one</string>
+    <!--ANSWER  --> <string name="SAns9">C. a loaf of</string>
+
+    <!-- ============== Number 10 ================== -->
+    <!--QUESTION--> <string name="SQuestion10">(10) Would you like ...?</string>
+    <!--OPTION A--> <string name="SA10">A. some milk</string>
+    <!--OPTION B--> <string name="SB10">B. a water</string>
+    <!--OPTION C--> <string name="SC10">C. honeys</string>
+    <!--OPTION D--> <string name="SD10">D. a orange</string>
+    <!--ANSWER  --> <string name="SAns10">A. some milk</string>
+
+    <!-- ============== Number 11 ================== -->
+    <!--QUESTION--> <string name="SQuestion11">(11) I wanted to buy two ... last week</string>
+    <!--OPTION A--> <string name="SA11">A. dictionary</string>
+    <!--OPTION B--> <string name="SB11">B. dictionaries</string>
+    <!--OPTION C--> <string name="SC11">C. pencil</string>
+    <!--OPTION D--> <string name="SD11">D. dictionarys</string>
+    <!--ANSWER  --> <string name="SAns11">B. dictionaries</string>
+
+    <!-- ============== Number 12 ================== -->
+    <!--QUESTION--> <string name="SQuestion12">(12) Do you need ... sugar for that?</string>
+    <!--OPTION A--> <string name="SA12">A. a lump of</string>
+    <!--OPTION B--> <string name="SB12">B. a</string>
+    <!--OPTION C--> <string name="SC12">C. a pile of</string>
+    <!--OPTION D--> <string name="SD12">D. an</string>
+    <!--ANSWER  --> <string name="SAns12">A. a lump of</string>
+
+    <!-- ============== Number 13 ================== -->
+    <!--QUESTION--> <string name="SQuestion13">(13) She ate ... cake this morning</string>
+    <!--OPTION A--> <string name="SA13">A. a block of</string>
+    <!--OPTION B--> <string name="SB13">B. a bar of</string>
+    <!--OPTION C--> <string name="SC13">C. a strand of</string>
+    <!--OPTION D--> <string name="SD13">D. a piece of</string>
+    <!--ANSWER  --> <string name="SAns13">D. a piece of</string>
+
+    <!-- ============== Number 14 ================== -->
+    <!--QUESTION--> <string name="SQuestion14">(14) How often does your mother watch films ... television?</string>
+    <!--OPTION A--> <string name="SA14">A. in</string>
+    <!--OPTION B--> <string name="SB14">B. at</string>
+    <!--OPTION C--> <string name="SC14">C. on</string>
+    <!--OPTION D--> <string name="SD14">D. to</string>
+    <!--ANSWER  --> <string name="SAns14">C. on</string>
+
+    <!-- ============== Number 15 ================== -->
+    <!--QUESTION--> <string name="SQuestion15">(15) He has been trying to give us the solution ... our serious problem</string>
+    <!--OPTION A--> <string name="SA15">A. by</string>
+    <!--OPTION B--> <string name="SB15">B. on</string>
+    <!--OPTION C--> <string name="SC15">C. in</string>
+    <!--OPTION D--> <string name="SD15">D. to</string>
+    <!--ANSWER  --> <string name="SAns15">D. to</string>
+
+    <!-- ============== Number 16 ================== -->
+    <!--QUESTION--> <string name="SQuestion16">(16) She <u><b>needs</b></u> some coffee, some <u><b>sugars</b></u>,
+    some milk, and <u><b>hot</b></u> water to make <u><b>a cup</b></u> of coffee</string>
+    <!--OPTION A--> <string name="SA16">A. needs</string>
+    <!--OPTION B--> <string name="SB16">B. sugars</string>
+    <!--OPTION C--> <string name="SC16">C. hot</string>
+    <!--OPTION D--> <string name="SD16">D. a cup</string>
+    <!--ANSWER  --> <string name="SAns16">B. sugars</string>
+
+    <!-- ============== Number 17 ================== -->
+    <!--QUESTION--> <string name="SQuestion17">(17) <u><b>The</b></u> girls <u><b>in</b></u> the car <u><b>is</b></u>
+    my sister\'s <u><b>classmates</b></u></string>
+    <!--OPTION A--> <string name="SA17">A. The</string>
+    <!--OPTION B--> <string name="SB17">B. in</string>
+    <!--OPTION C--> <string name="SC17">C. is</string>
+    <!--OPTION D--> <string name="SD17">D. classmates</string>
+    <!--ANSWER  --> <string name="SAns17">C. is</string>
+
+    <!-- ============== Number 18 ================== -->
+    <!--QUESTION--> <string name="SQuestion18">(18) Ratih is <u><b>a write</b></u> who <u><b>has</b></u>
+    written more <u><b>than</b></u> 100 <u><b>novels</b></u></string>
+    <!--OPTION A--> <string name="SA18">A. a write</string>
+    <!--OPTION B--> <string name="SB18">B. has</string>
+    <!--OPTION C--> <string name="SC18">C. than</string>
+    <!--OPTION D--> <string name="SD18">D. novels</string>
+    <!--ANSWER  --> <string name="SAns18">A. a write</string>
+
+    <!-- ============== Number 19 ================== -->
+    <!--QUESTION--> <string name="SQuestion19">(19) My <u><b>sister</b></u> Cindy is <u><b>a</b></u> professional
+    <u><b>cooker</b></u> who works in a Chinese <u><b>restaurant</b></u></string>
+    <!--OPTION A--> <string name="SA19">A. sister</string>
+    <!--OPTION B--> <string name="SB19">B. a</string>
+    <!--OPTION C--> <string name="SC19">C. cooker</string>
+    <!--OPTION D--> <string name="SD19">D. restaurant</string>
+    <!--ANSWER  --> <string name="SAns19">C. cooker</string>
+
+    <!-- ============== Number 20 ================== -->
+    <!--QUESTION--> <string name="SQuestion20">(20) <u><b>As</b></u> a wise <u><b>men</b></u> he never <u><b>complains</b></u>
+    when he has a lot of <u><b>problems</b></u></string>
+    <!--OPTION A--> <string name="SA20">A. As</string>
+    <!--OPTION B--> <string name="SB20">B. men</string>
+    <!--OPTION C--> <string name="SC20">C. complains</string>
+    <!--OPTION D--> <string name="SD20">D. problems</string>
+    <!--ANSWER  --> <string name="SAns20">B. men</string>
+
+    <!-- ============== Number 21 ================== -->
+    <!--QUESTION--> <string name="SQuestion21">(21) There are some <u><b>point</b></u> that <i><b>we</b></i> are going
+    to <i><b>highlight</b></i> in <i><b>the</b></i> annual meeting</string>
+    <!--OPTION A--> <string name="SA21">A. point</string>
+    <!--OPTION B--> <string name="SB21">B. we</string>
+    <!--OPTION C--> <string name="SC21">C. highlight</string>
+    <!--OPTION D--> <string name="SD21">D. the</string>
+    <!--ANSWER  --> <string name="SAns21">A. point</string>
+
+    <!-- ============== Number 22 ================== -->
+    <!--QUESTION--> <string name="SQuestion22">(22) I <i><b>think</b></i> he really <u><b>need</b></u> to come here <u><b>to help</b></u>
+    them <u><b>finish</b></u> the project</string>
+    <!--OPTION A--> <string name="SA22">A. think</string>
+    <!--OPTION B--> <string name="SB22">B. need</string>
+    <!--OPTION C--> <string name="SC22">C. to help</string>
+    <!--OPTION D--> <string name="SD22">D. finish</string>
+    <!--ANSWER  --> <string name="SAns22">B. need</string>
+
+    <!-- ============== Number 23 ================== -->
+    <!--QUESTION--> <string name="SQuestion23">(23) Physics <u><b>are</b></u> the most <u><b>difficult</b></u> lesson
+    <u><b>for</b></u> me <u><b>at school</b></u></string>
+    <!--OPTION A--> <string name="SA23">A. are</string>
+    <!--OPTION B--> <string name="SB23">B. difficult</string>
+    <!--OPTION C--> <string name="SC23">C. for</string>
+    <!--OPTION D--> <string name="SD23">D. at school</string>
+    <!--ANSWER  --> <string name="SAns23">A. are</string>
+
+    <!-- ============== Number 24 ================== -->
+    <!--QUESTION--> <string name="SQuestion24">(24) In <u><b>my opinion</b></u>, mumps <u><b>are</b></u> a
+    very <u><b>infectious</b></u> and dangerous <u><b>disease</b></u></string>
+    <!--OPTION A--> <string name="SA24">A. my opinion</string>
+    <!--OPTION B--> <string name="SB24">B. are</string>
+    <!--OPTION C--> <string name="SC24">C. infectious</string>
+    <!--OPTION D--> <string name="SD24">D. disease</string>
+    <!--ANSWER  --> <string name="SAns24">B. are</string>
+
+    <!-- ============== Number 25 ================== -->
+    <!--QUESTION--> <string name="SQuestion25">(25) <u><b>Sometimes</b></u> mountaineers do not <u><b>realize</b></u> the
+    <u><b>dangerous</b></u> of <u><b>climbing</b></u> a volcano</string>
+    <!--OPTION A--> <string name="SA25">A. Sometimes</string>
+    <!--OPTION B--> <string name="SB25">B. realize</string>
+    <!--OPTION C--> <string name="SC25">C. dangerous</string>
+    <!--OPTION D--> <string name="SD25">D. climbing</string>
+    <!--ANSWER  --> <string name="SAns25">C. dangerous</string>
+
+    <!-- ============== Number 26 ================== -->
+    <!--QUESTION--> <string name="SQuestion26">(26) Can you <u><b>tell</b></u> me what <u><b>the</b></u> agenda
+    <u><b>of</b></u> the monthly meeting <u><b>is</b></u>?</string>
+    <!--OPTION A--> <string name="SA26">A. tell</string>
+    <!--OPTION B--> <string name="SB26">B. the</string>
+    <!--OPTION C--> <string name="SC26">C. of</string>
+    <!--OPTION D--> <string name="SD26">D. is</string>
+    <!--ANSWER  --> <string name="SAns26">D. is</string>
+
+    <!-- ============== Number 27 ================== -->
+    <!--QUESTION--> <string name="SQuestion27">(27) The <u><b>five-years</b></u> boy in the <u><b>living</b></u> room is my
+    <u><b>friend\'s</b></u> first <u><b>son</b></u></string>
+    <!--OPTION A--> <string name="SA27">A. five-years</string>
+    <!--OPTION B--> <string name="SB27">B. living</string>
+    <!--OPTION C--> <string name="SC27" >C. friend\'s</string>
+    <!--OPTION D--> <string name="SD27">D. son</string>
+    <!--ANSWER  --> <string name="SAns27">A. five-years</string>
+
+    <!-- ============== Number 28 ================== -->
+    <!--QUESTION--> <string name="SQuestion28">(28) No one <u><b>knows</b></u> why her <u><b>little</b></u> baby always <u><b>cry</b></u>
+    every <u><b>night</b></u></string>
+    <!--OPTION A--> <string name="SA28">A. knows</string>
+    <!--OPTION B--> <string name="SB28">B. little</string>
+    <!--OPTION C--> <string name="SC28">C. cry</string>
+    <!--OPTION D--> <string name="SD28">D. night</string>
+    <!--ANSWER  --> <string name="SAns28">C. cry</string>
+
+    <!-- ============== Number 29 ================== -->
+    <!--QUESTION--> <string name="SQuestion29">(29) <u><b>Perhaps</b></u> there <u><b>is</b></u> still <u><b>a water</b></u> in the cup
+    on <u><b>the table</b></u></string>
+    <!--OPTION A--> <string name="SA29">A. Perhaps</string>
+    <!--OPTION B--> <string name="SB29">B. is</string>
+    <!--OPTION C--> <string name="SC29">C. a water</string>
+    <!--OPTION D--> <string name="SD29">D. the table</string>
+    <!--ANSWER  --> <string name="SAns29">C. a water</string>
+
+    <!-- ============== Number 30 ================== -->
+    <!--QUESTION--> <string name="SQuestion30">(30) <u><b>My</b></u> sisters, Cindy and Nadia, never <u><b>swims</b></u>
+    in <u><b>the swimming pool</b></u> near our <u><b>house</b></u></string>
+    <!--OPTION A--> <string name="SA30">A. My</string>
+    <!--OPTION B--> <string name="SB30">B. swims</string>
+    <!--OPTION C--> <string name="SC30">C. the swimming pool</string>
+    <!--OPTION D--> <string name="SD30">D. house</string>
+    <!--ANSWER  --> <string name="SAns30">B. swims</string>
+
+    <!-- ============== Number 31 ================== -->
+    <!--QUESTION--> <string name="SQuestion31">(31) <u><b>Are</b></u> there a girl
+    <u><b>in the meeting</b></u> that <u><b>was</b></u> held last <u><b>week</b></u>?</string>
+    <!--OPTION A--> <string name="SA31">A. Are</string>
+    <!--OPTION B--> <string name="SB31">B. in the meeting</string>
+    <!--OPTION C--> <string name="SC31">C. was</string>
+    <!--OPTION D--> <string name="SD31">D. week</string>
+    <!--ANSWER  --> <string name="SAns31">A. Are</string>
+
+    <!-- ============== Number 32 ================== -->
+    <!--QUESTION--> <string name="SQuestion32">(32) All <u><b>students</b></u> like Mr. Big
+    <u><b>because</b></u> he <u><b>teach them patiently</b></u> every <u><b>day</b></u></string>
+    <!--OPTION A--> <string name="SA32">A. students</string>
+    <!--OPTION B--> <string name="SB32">B. because</string>
+    <!--OPTION C--> <string name="SC32">C. teach them patiently</string>
+    <!--OPTION D--> <string name="SD32">D. day</string>
+    <!--ANSWER  --> <string name="SAns32">C. teach them patiently</string>
+
+    <!-- ============== Number 33 ================== -->
+    <!--QUESTION--> <string name="SQuestion33">(33) My father, with <u><b>his</b></u> friends,
+    sometimes <u><b>drink</b></u> beer <u><b>together</b></u> at <u><b>home</b></u></string>
+    <!--OPTION A--> <string name="SA33">A. his</string>
+    <!--OPTION B--> <string name="SB33">B. drink</string>
+    <!--OPTION C--> <string name="SC33">C. together</string>
+    <!--OPTION D--> <string name="SD33">D. home</string>
+    <!--ANSWER  --> <string name="SAns33">B. drink</string>
+
+    <!-- ============== Number 34 ================== -->
+    <!--QUESTION--> <string name="SQuestion34">(34) Peter <u><b>wants</b></u> to buy some <u><b>novels</b></u>,
+    but he <u><b>does</b></u> not have <u><b>a money</b></u> anymore</string>
+    <!--OPTION A--> <string name="SA34">A. wants</string>
+    <!--OPTION B--> <string name="SB34">B. novels</string>
+    <!--OPTION C--> <string name="SC34">C. does</string>
+    <!--OPTION D--> <string name="SD34">D. a money</string>
+    <!--ANSWER  --> <string name="SAns34">D. a money</string>
+
+    <!-- ============== Number 35 ================== -->
+    <!--QUESTION--> <string name="SQuestion35">(35) <u><b>My</b></u> friends like <u><b>talking</b></u>
+    about <u><b>political</b></u> in their free <u><b>time</b></u></string>
+    <!--OPTION A--> <string name="SA35">A. My</string>
+    <!--OPTION B--> <string name="SB35">B. talking</string>
+    <!--OPTION C--> <string name="SC35">C. political</string>
+    <!--OPTION D--> <string name="SD35">D. time</string>
+    <!--ANSWER  --> <string name="SAns35">C. political</string>
+
+    <!-- ============== Number 36 ================== -->
+    <!--QUESTION--> <string name="SQuestion36">(36) Do you <u><b>know</b></u> why he always
+    <u><b>watch</b></u> television <u><b>every</b></u> morning before he <u><b>goes to the office</b></u>?</string>
+    <!--OPTION A--> <string name="SA36">A. know</string>
+    <!--OPTION B--> <string name="SB36">B. watch</string>
+    <!--OPTION C--> <string name="SC36">C. every</string>
+    <!--OPTION D--> <string name="SD36">D. goes to the office</string>
+    <!--ANSWER  --> <string name="SAns36">B. watch</string>
+
+    <!-- ============== Number 37 ================== -->
+    <!--QUESTION--> <string name="SQuestion37">(37) <u><b>Did</b></u> you get <u><b>the</b></u> invitation
+    <u><b>for</b></u> Linda\'s wedding party <u><b>next</b></u> month?</string>
+    <!--OPTION A--> <string name="SA37">A. Did</string>
+    <!--OPTION B--> <string name="SB37">B. the</string>
+    <!--OPTION C--> <string name="SC37">C. for</string>
+    <!--OPTION D--> <string name="SD37">D. next</string>
+    <!--ANSWER  --> <string name="SAns37">C. for</string>
+
+    <!-- ============== Number 38 ================== -->
+    <!--QUESTION--> <string name="SQuestion38">(38) I <u><b>like</b></u> watching films <u><b>at television</b></u>
+    in the <u><b>evenings</b></u> before <u><b>i go to bed</b></u></string>
+    <!--OPTION A--> <string name="SA38">A. like</string>
+    <!--OPTION B--> <string name="SB38">B. at television</string>
+    <!--OPTION C--> <string name="SC38">C. evenings</string>
+    <!--OPTION D--> <string name="SD38">D. i go to bed</string>
+    <!--ANSWER  --> <string name="SAns38">B. at television</string>
+
+    <!-- ============== Number 39 ================== -->
+    <!--QUESTION--> <string name="SQuestion39">(39) <u><b>The</b></u> manager is <u><b>going</b></u>
+    to tell <u><b>us</b></u> about the <u><b>cause to</b></u> changing the plan</string>
+    <!--OPTION A--> <string name="SA39">A. The</string>
+    <!--OPTION B--> <string name="SB39">B. going</string>
+    <!--OPTION C--> <string name="SC39">C. us</string>
+    <!--OPTION D--> <string name="SD39">D. cause to</string>
+    <!--ANSWER  --> <string name="SAns39">D. cause to</string>
+
+    <!-- ============== Number 40 ================== -->
+    <!--QUESTION--> <string name="SQuestion40">(40) I do not <u><b>know</b></u> whether <u><b>they</b></u>
+    will pay <u><b>by</b></u> credit card or <u><b>with cash</b></u></string>
+    <!--OPTION A--> <string name="SA40">A. know</string>
+    <!--OPTION B--> <string name="SB40">B. they</string>
+    <!--OPTION C--> <string name="SC40">C. by</string>
+    <!--OPTION D--> <string name="SD40">D. with cash</string>
+    <!--ANSWER  --> <string name="SAns40">D. with cash</string>
+
+
+</resources>

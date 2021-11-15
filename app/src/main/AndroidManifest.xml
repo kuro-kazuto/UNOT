@@ -15,6 +15,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT">
         <activity
+            android:name=".Structure"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".testfoto"
             android:exported="true" />
         <activity
@@ -44,9 +47,6 @@
             android:name=".Blank404"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".Listening_direction"
-            android:exported="true" />
         <activity
             android:name=".Help"
             android:theme="@style/Theme.AppCompat.NoActionBar" />

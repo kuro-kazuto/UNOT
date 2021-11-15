@@ -32,8 +32,8 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.untirta.unot.AdminSide.Admin_control;
 import com.untirta.unot.Blank404;
-import com.untirta.unot.Listening_direction;
 import com.untirta.unot.R;
+import com.untirta.unot.Structure;
 import com.untirta.unot.testfoto;
 
 
@@ -115,7 +115,7 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
-                                Intent intent = new Intent(getActivity(), Listening_direction.class);
+                                Intent intent = new Intent(getActivity(), Structure.class);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -168,7 +168,7 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
-                                Intent intent = new Intent(getActivity(), Listening_direction.class);
+                                Intent intent = new Intent(getActivity(), Structure.class);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
