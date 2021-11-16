@@ -34,7 +34,7 @@ public class SoalAAdapter extends RecyclerView.Adapter {
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View questionView = LayoutInflater.from(mContext)
-                .inflate(R.layout.structure_card_layout, parent, false);
+                .inflate(R.layout.soal_a_card_layout, parent, false);
         return new QuestionViewHolder(questionView);
     }
 
