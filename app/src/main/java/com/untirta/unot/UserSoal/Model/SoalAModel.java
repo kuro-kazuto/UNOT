@@ -1,13 +1,13 @@
-package com.untirta.unot.Model;
+package com.untirta.unot.UserSoal.Model;
 
-public class Soal {
+public class SoalAModel {
     String id, question, jawabanBenar, answerA, answerB, answerC, answerD;
 
-    public Soal() {
+    public SoalAModel() {
 
     }
 
-    public Soal(String id, String question, String jawabanBenar, String answerA, String answerB, String answerC, String answerD) {
+    public SoalAModel(String id, String question, String jawabanBenar, String answerA, String answerB, String answerC, String answerD) {
         this.id = id;
         this.question = question;
         this.jawabanBenar = jawabanBenar;

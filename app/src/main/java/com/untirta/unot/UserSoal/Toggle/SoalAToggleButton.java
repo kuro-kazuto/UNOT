@@ -1,4 +1,4 @@
-package com.untirta.unot.Toggle;
+package com.untirta.unot.UserSoal.Toggle;
 
 import android.content.Context;
 import android.content.DialogInterface;
@@ -11,24 +11,20 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.RadioButton;
 import android.widget.TableLayout;
-
 import androidx.appcompat.app.AlertDialog;
-
-//import com.labcnt.sttq.Listening;
 import com.untirta.unot.R;
-import com.untirta.unot.Structure;
-
+import com.untirta.unot.UserSoal.Soal_A;
 import java.util.ArrayList;
 
-public class StructureToggleButton extends TableLayout {
+public class SoalAToggleButton extends TableLayout {
 
     private RadioButton mActiveRadioButton;
 
-    public StructureToggleButton(Context context) {
+    public SoalAToggleButton(Context context) {
         super(context);
     }
 
-    public StructureToggleButton(Context context, AttributeSet attrs) {
+    public SoalAToggleButton(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
@@ -71,7 +67,7 @@ public class StructureToggleButton extends TableLayout {
                             // jika tombol diklik, soal langsung terupdate
                             setRadioButtonBackgroundColor(rb, R.color.transparent_grey);
                             if (rb.getText().equals(answer)) {
-                                ((Structure) mContext).updateScore();
+                                ((Soal_A) mContext).updateScore();
                                 Animation startAnimation = AnimationUtils.loadAnimation(mContext.getApplicationContext(), R.anim.fade_out);
                                 rb.startAnimation(startAnimation);
                                 if (startAnimation == startAnimation) {
@@ -117,7 +113,7 @@ public class StructureToggleButton extends TableLayout {
                                     }
                                 }
                             }
-                            ((Structure) mContext).displayScore();
+                            ((Soal_A) mContext).displayScore();
                             mActiveRadioButton = rb;
                             for (RadioButton radioButton : getChildren()) {
                                 radioButton.setClickable(false);

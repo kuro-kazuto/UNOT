@@ -91,17 +91,5 @@ public class Admin_Remote extends AppCompatActivity {
             }
         });
 
-        dialogMethod();
-
-
-
-
-    }
-
-    private void dialogMethod() {
-        Dialog dialog = new Dialog(Admin_Remote.this);
-        //Memasang Desain Layout untuk Custom Dialog
-        dialog.setContentView(R.layout.dialog_jurusan);
-
     }
 }

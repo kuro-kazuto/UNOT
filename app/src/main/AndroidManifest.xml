@@ -15,7 +15,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT">
         <activity
-            android:name=".Structure"
+            android:name=".UserSoal.Soal_A"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".testfoto"

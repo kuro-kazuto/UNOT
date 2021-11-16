@@ -1,14 +1,18 @@
 //AKTIVITY SPLASH SCREEN
 package com.untirta.unot;
 
+import android.app.Dialog;
 import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.os.Handler;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.untirta.unot.AccountSide.Login;
+import com.untirta.unot.AdminSide.Admin_Remote;
+import com.untirta.unot.AdminSide.Admin_control;
 
 public class Splash extends AppCompatActivity {
 
@@ -33,5 +37,7 @@ public class Splash extends AppCompatActivity {
 
             }
         }, waktu_loading);
+
+
     }
 }

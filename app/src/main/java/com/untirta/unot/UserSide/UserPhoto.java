@@ -2,13 +2,17 @@ package com.untirta.unot.UserSide;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.provider.MediaStore;
 import android.view.View;
 import android.widget.Button;
@@ -31,12 +35,17 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.mikhaellopez.circularimageview.CircularImageView;
+import com.untirta.unot.AccountSide.Login;
+import com.untirta.unot.AdminSide.Admin_Remote;
+import com.untirta.unot.AdminSide.Admin_control;
 import com.untirta.unot.R;
+import com.untirta.unot.Splash;
 
 import java.io.ByteArrayOutputStream;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.Objects;
 
 public class UserPhoto extends AppCompatActivity {
 
@@ -78,6 +87,7 @@ public class UserPhoto extends AppCompatActivity {
             }
         });
 
+
         uploadButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -85,10 +95,27 @@ public class UserPhoto extends AppCompatActivity {
                     Toast.makeText(UserPhoto.this, "Tidak Ada Foto!, Harap Tambah Foto Untuk Melanjutkan", Toast.LENGTH_SHORT).show();
                 } else{
                     uploadImage();
-                    String Uname = NIM.getText().toString();
-                    Intent pindahKeDashboard = new Intent(UserPhoto.this, MainActivity.class);
-                    pindahKeDashboard.putExtra("Uname", Uname);
-                    startActivity(pindahKeDashboard);
+                    Dialog dialog = new Dialog(UserPhoto.this);
+                    //Memasang Desain Layout untuk Custom Dialog
+                    dialog.setContentView(R.layout.dialog_progress);
+                    dialog.setCanceledOnTouchOutside(false);
+                    dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+                    int waktu_loading = 8000;
+                    new Handler().postDelayed(new Runnable() {
+                        @Override
+                        public void run() {
+
+                            //setelah loading maka akan langsung berpindah activity
+                            String Uname = NIM.getText().toString();
+                            Intent pindahKeDashboard = new Intent(UserPhoto.this, MainActivity.class);
+                            pindahKeDashboard.putExtra("Uname", Uname);
+                            startActivity(pindahKeDashboard);
+                            finish();
+
+                        }
+                    }, waktu_loading);
+                    dialog.show();
+
                 }
             }
         });

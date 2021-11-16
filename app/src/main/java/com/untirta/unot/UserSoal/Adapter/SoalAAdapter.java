@@ -1,4 +1,4 @@
-package com.untirta.unot.Adapter;
+package com.untirta.unot.UserSoal.Adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -11,21 +11,20 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.untirta.unot.Model.Soal;
+import com.untirta.unot.UserSoal.Model.SoalAModel;
 import com.untirta.unot.R;
-import com.untirta.unot.Model.StructureModel;
-import com.untirta.unot.Toggle.StructureToggleButton;
+import com.untirta.unot.UserSoal.Toggle.SoalAToggleButton;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class StructureAdapter extends RecyclerView.Adapter {
+public class SoalAAdapter extends RecyclerView.Adapter {
 
     private Context mContext;
-    List<Soal> mQuestionList;
+    List<SoalAModel> mQuestionList;
 
 
-    public StructureAdapter(Context context, List<Soal> questionList) {
+    public SoalAAdapter(Context context, List<SoalAModel> questionList) {
         this.mContext = context;
         this.mQuestionList = questionList;
     }
@@ -43,7 +42,7 @@ public class StructureAdapter extends RecyclerView.Adapter {
 
     @Override
     public void onBindViewHolder(final RecyclerView.ViewHolder holder, int position) {
-        final Soal question = mQuestionList.get(position);
+        final SoalAModel question = mQuestionList.get(position);
         final QuestionViewHolder questionViewHolder = (QuestionViewHolder) holder;
         questionViewHolder.mQuestion.setText(question.getQuestion());
         questionViewHolder.mRb1.setText(question.getAnswerA());
@@ -82,7 +81,7 @@ public class StructureAdapter extends RecyclerView.Adapter {
         RadioButton mRb3;
         RadioButton mRb4;
 
-        StructureToggleButton mTableLayout;
+        SoalAToggleButton mTableLayout;
 
         QuestionViewHolder(View itemView) {
             super(itemView);
