@@ -1,5 +1,7 @@
 package com.untirta.unot.UserSoal.Model;
 
+import com.google.firebase.database.DatabaseReference;
+
 public class SoalAModel {
     String id, question, jawabanBenar, answerA, answerB, answerC, answerD;
 

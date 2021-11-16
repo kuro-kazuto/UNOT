@@ -11,7 +11,7 @@ import com.untirta.unot.R;
 
 public class Dashboard_admin extends AppCompatActivity {
 
-    ImageView btnRemote, btnNilai;
+    ImageView btnRemote, btnNilai, btnBuatSoal;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,8 +20,20 @@ public class Dashboard_admin extends AppCompatActivity {
 
         btnNilai = findViewById(R.id.btn_nilai);
         btnRemote = findViewById(R.id.btn_remote);
+        btnBuatSoal = findViewById(R.id.btn_soal);
         BtnNilai();
         BtnRemote();
+        BtnBuatSoal();
+    }
+
+    private void BtnBuatSoal() {
+        btnBuatSoal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Dashboard_admin.this, Set_Soal.class);
+                startActivity(intent);
+            }
+        });
     }
 
     private void BtnNilai(){
