@@ -17,23 +17,27 @@
         android:usesCleartextTraffic="true">
 
         <activity
-            android:name=".SiakadActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".WebView.QrTool"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+
         <activity
-            android:name=".TugasAkhirActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".WebView.SiakadActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
         <activity
-            android:name=".WisudaActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".WebView.TugasAkhirActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"/>
         <activity
-            android:name=".SpadaActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".WebView.WisudaActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".WebView.SpadaActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
         <activity
             android:name=".MainActivity2"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
         <activity
-            android:name=".EadministrasiActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+            android:name=".WebView.EadministrasiActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
 
         <activity
             android:name=".Preview_Create"

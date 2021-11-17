@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.WebView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,22 +8,30 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.CookieManager;
-import android.webkit.WebStorage;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.untirta.unot.MainActivity2;
+import com.untirta.unot.R;
 
-import java.util.Objects;
-
-public class SpadaActivity extends AppCompatActivity {
+public class EadministrasiActivity extends AppCompatActivity {
   private WebView webView;
   private TextView error;
+
+  FloatingActionButton printFab, qrFab;
+  ExtendedFloatingActionButton toolFab;
+  TextView printActionText, qrActionText;
+  Boolean isAllFabsVisible;
+
 
   SwipeRefreshLayout swipe;
   @Override
@@ -33,6 +41,59 @@ public class SpadaActivity extends AppCompatActivity {
     webView = findViewById(R.id.webview);
     error = findViewById(R.id.error);
     gotoPage();
+
+    //====floatingButton
+    toolFab = findViewById(R.id.tool_fab);
+    printFab = findViewById(R.id.print_fab);
+    qrFab = findViewById(R.id.qr_fab);
+    printActionText = findViewById(R.id.print_action_text);
+    qrActionText = findViewById(R.id.qr_action_text);
+
+    // set all the FABs and all the action name texts as GONE
+    printFab.setVisibility(View.GONE);
+    qrFab.setVisibility(View.GONE);
+    printActionText.setVisibility(View.GONE);
+    qrActionText.setVisibility(View.GONE);
+
+    isAllFabsVisible = false;
+    toolFab.shrink();
+    toolFab.setOnClickListener(view -> {
+      if (!isAllFabsVisible) {
+        printFab.show();
+        qrFab.show();
+        printActionText.setVisibility(View.VISIBLE);
+        qrActionText.setVisibility(View.VISIBLE);
+        toolFab.extend();
+        isAllFabsVisible = true;
+      } else {
+        printFab.hide();
+        qrFab.hide();
+        printActionText.setVisibility(View.GONE);
+        qrActionText.setVisibility(View.GONE);
+        toolFab.shrink();
+        isAllFabsVisible = false;
+      }
+    });
+
+    qrFab.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Toast.makeText
+                (EadministrasiActivity.this, "Person Added",
+                        Toast.LENGTH_SHORT).show();
+      }
+    });
+
+    printFab.setOnClickListener(
+            new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                Toast.makeText
+                        (EadministrasiActivity.this, "Alarm Added",
+                                Toast.LENGTH_SHORT).show();
+              }
+            });
+    //=============
 
     //Buttom
     BottomNavigationItemView btnBack = findViewById(R.id.navigation_back);
@@ -75,7 +136,7 @@ public class SpadaActivity extends AppCompatActivity {
       }
     });
     btnHome.setOnClickListener(new View.OnClickListener() {
-      String url = "http://spada.untirta.ac.id/"; //Change URL
+      String url = "https://eadminstrasi.untirta.ac.id";
       @Override
       public void onClick(View v) {
         webView.loadUrl(url);
@@ -88,7 +149,7 @@ public class SpadaActivity extends AppCompatActivity {
         webView.clearCache(true);
         webView.clearHistory();
         deleteCookies();
-        Intent i = new Intent(SpadaActivity.this, MainActivity2.class);
+        Intent i = new Intent(EadministrasiActivity.this, MainActivity2.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
       }
@@ -98,7 +159,7 @@ public class SpadaActivity extends AppCompatActivity {
 
   private void gotoPage() {
     ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-    NetworkInfo nInfo = Objects.requireNonNull(manager).getActiveNetworkInfo();
+    NetworkInfo nInfo = manager.getActiveNetworkInfo();
     if (nInfo != null && nInfo.isConnectedOrConnecting()) {
       // isConnected = true;
       Button theButton = findViewById(R.id.button);
@@ -106,11 +167,8 @@ public class SpadaActivity extends AppCompatActivity {
       error.setVisibility(View.GONE);
       webView.setVisibility(View.VISIBLE);
       //URL
-      String url = "http://spada.untirta.ac.id/"; //Change URL
+      String url = "http://eadministrasi.untirta.ac.id";
       //
-      WebStorage.getInstance().deleteAllData();
-
-      // Clear all the cookies
       webView.getSettings().setLoadWithOverviewMode(true);
       webView.getSettings().setUseWideViewPort(true);
       webView.getSettings().setSupportZoom(true);

@@ -6,6 +6,12 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.untirta.unot.WebView.EadministrasiActivity;
+import com.untirta.unot.WebView.SiakadActivity;
+import com.untirta.unot.WebView.SpadaActivity;
+import com.untirta.unot.WebView.TugasAkhirActivity;
+import com.untirta.unot.WebView.WisudaActivity;
+
 public class MainActivity2 extends AppCompatActivity {
     Button TA, siakad, spada, wisuda, eadmin;
 

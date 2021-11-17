@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.WebView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -8,7 +8,6 @@ import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.webkit.CookieManager;
-import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
@@ -19,12 +18,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.untirta.unot.MainActivity2;
+import com.untirta.unot.R;
 
-import java.util.Objects;
-
-public class SiakadActivity extends AppCompatActivity {
+public class WisudaActivity extends AppCompatActivity {
   private WebView webView;
   private TextView error;
+
+  FloatingActionButton printFab, qrFab;
+  ExtendedFloatingActionButton toolFab;
+  TextView printActionText, qrActionText;
+  Boolean isAllFabsVisible;
 
   SwipeRefreshLayout swipe;
   @Override
@@ -32,9 +38,61 @@ public class SiakadActivity extends AppCompatActivity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_webview);
     webView = findViewById(R.id.webview);
-    webView.getSettings().setJavaScriptEnabled(true);
     error = findViewById(R.id.error);
     gotoPage();
+
+    //====floatingButton
+    toolFab = findViewById(R.id.tool_fab);
+    printFab = findViewById(R.id.print_fab);
+    qrFab = findViewById(R.id.qr_fab);
+    printActionText = findViewById(R.id.print_action_text);
+    qrActionText = findViewById(R.id.qr_action_text);
+
+    // set all the FABs and all the action name texts as GONE
+    printFab.setVisibility(View.GONE);
+    qrFab.setVisibility(View.GONE);
+    printActionText.setVisibility(View.GONE);
+    qrActionText.setVisibility(View.GONE);
+
+    isAllFabsVisible = false;
+    toolFab.shrink();
+    toolFab.setOnClickListener(view -> {
+      if (!isAllFabsVisible) {
+        printFab.show();
+        qrFab.show();
+        printActionText.setVisibility(View.VISIBLE);
+        qrActionText.setVisibility(View.VISIBLE);
+        toolFab.extend();
+        isAllFabsVisible = true;
+      } else {
+        printFab.hide();
+        qrFab.hide();
+        printActionText.setVisibility(View.GONE);
+        qrActionText.setVisibility(View.GONE);
+        toolFab.shrink();
+        isAllFabsVisible = false;
+      }
+    });
+
+    qrFab.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Toast.makeText
+                (WisudaActivity.this, "Person Added",
+                        Toast.LENGTH_SHORT).show();
+      }
+    });
+
+    printFab.setOnClickListener(
+            new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                Toast.makeText
+                        (WisudaActivity.this, "Alarm Added",
+                                Toast.LENGTH_SHORT).show();
+              }
+            });
+    //=============
 
     //Buttom
     BottomNavigationItemView btnBack = findViewById(R.id.navigation_back);
@@ -56,6 +114,7 @@ public class SiakadActivity extends AppCompatActivity {
       public void onClick(View v) {
         if (webView.isFocused() && webView.canGoBack()) {
           webView.goBack();
+          swipe.setRefreshing(true);
         }
       }
     });
@@ -64,6 +123,7 @@ public class SiakadActivity extends AppCompatActivity {
       public void onClick(View v) {
         if (webView.isFocused() && webView.canGoForward()) {
           webView.goForward();
+          swipe.setRefreshing(true);
         }
       }
     });
@@ -75,11 +135,10 @@ public class SiakadActivity extends AppCompatActivity {
       }
     });
     btnHome.setOnClickListener(new View.OnClickListener() {
-      String url = "siakad.untirta.ac.id"; //Change URL
+      String url = "http://wisuda.untirta.ac.id/web"; //Change URL
       @Override
       public void onClick(View v) {
         webView.loadUrl(url);
-        webView.getSettings().setJavaScriptEnabled(true);
         swipe.setRefreshing(true);
       }
     });
@@ -89,7 +148,7 @@ public class SiakadActivity extends AppCompatActivity {
         webView.clearHistory();
         webView.clearCache(true);
         deleteCookies();
-        Intent i = new Intent(SiakadActivity.this, MainActivity2.class);
+        Intent i = new Intent(WisudaActivity.this, MainActivity2.class);
         i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
         startActivity(i);
       }
@@ -99,7 +158,7 @@ public class SiakadActivity extends AppCompatActivity {
 
   private void gotoPage() {
     ConnectivityManager manager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-    NetworkInfo nInfo = Objects.requireNonNull(manager).getActiveNetworkInfo();
+    NetworkInfo nInfo = manager.getActiveNetworkInfo();
     if (nInfo != null && nInfo.isConnectedOrConnecting()) {
       // isConnected = true;
       Button theButton = findViewById(R.id.button);
@@ -107,10 +166,8 @@ public class SiakadActivity extends AppCompatActivity {
       error.setVisibility(View.GONE);
       webView.setVisibility(View.VISIBLE);
       //URL
-      String url = "http://siakad.untirta.ac.id";
+      String url = "http://wisuda.untirta.ac.id/web"; //Change URL
       //
-      webView.setWebChromeClient(new WebChromeClient());
-      webView.setWebViewClient(new WebViewClient());
       webView.getSettings().setLoadWithOverviewMode(true);
       webView.getSettings().setUseWideViewPort(true);
       webView.getSettings().setSupportZoom(true);
@@ -148,20 +205,18 @@ public class SiakadActivity extends AppCompatActivity {
 
     @Override
     public boolean shouldOverrideUrlLoading(WebView view, String url) {
-      swipe.setRefreshing(true);
       return (false);
     }
 
     // when finish loading page
     public void onPageFinished(WebView view, String url) {
-        swipe.setRefreshing(false);
+      swipe.setRefreshing(false);
     }
-
     @Override
     public void onReceivedError(WebView view, int errorCode,
                                 String description, String failingUrl) {
       view.loadUrl("about:blank");
-      Toast.makeText(SiakadActivity.this, "Error occurred, please check network connectivity", Toast.LENGTH_SHORT).show();
+      //Toast.makeText(App.getContext(), "Error occured, please check newtwork connectivity", Toast.LENGTH_SHORT).show();
       super.onReceivedError(view, errorCode, description, failingUrl);
     }
   }
@@ -170,6 +225,7 @@ public class SiakadActivity extends AppCompatActivity {
   public void onBackPressed() {
     if (webView.isFocused() && webView.canGoBack()) {
       webView.goBack();
+      swipe.setRefreshing(true);
     } else {
       finish();
       super.onBackPressed();

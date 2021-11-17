@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.WebView;
 
 import android.content.Context;
 import android.content.Intent;
@@ -12,15 +12,25 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.untirta.unot.MainActivity2;
+import com.untirta.unot.R;
 
 public class TugasAkhirActivity extends AppCompatActivity {
   private WebView webView;
   private TextView error;
+
+  FloatingActionButton printFab, qrFab;
+  ExtendedFloatingActionButton toolFab;
+  TextView printActionText, qrActionText;
+  Boolean isAllFabsVisible;
 
   SwipeRefreshLayout swipe;
   @Override
@@ -30,6 +40,59 @@ public class TugasAkhirActivity extends AppCompatActivity {
     webView = findViewById(R.id.webview);
     error = findViewById(R.id.error);
     gotoPage();
+
+    //====floatingButton
+    toolFab = findViewById(R.id.tool_fab);
+    printFab = findViewById(R.id.print_fab);
+    qrFab = findViewById(R.id.qr_fab);
+    printActionText = findViewById(R.id.print_action_text);
+    qrActionText = findViewById(R.id.qr_action_text);
+
+    // set all the FABs and all the action name texts as GONE
+    printFab.setVisibility(View.GONE);
+    qrFab.setVisibility(View.GONE);
+    printActionText.setVisibility(View.GONE);
+    qrActionText.setVisibility(View.GONE);
+
+    isAllFabsVisible = false;
+    toolFab.shrink();
+    toolFab.setOnClickListener(view -> {
+      if (!isAllFabsVisible) {
+        printFab.show();
+        qrFab.show();
+        printActionText.setVisibility(View.VISIBLE);
+        qrActionText.setVisibility(View.VISIBLE);
+        toolFab.extend();
+        isAllFabsVisible = true;
+      } else {
+        printFab.hide();
+        qrFab.hide();
+        printActionText.setVisibility(View.GONE);
+        qrActionText.setVisibility(View.GONE);
+        toolFab.shrink();
+        isAllFabsVisible = false;
+      }
+    });
+
+    qrFab.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View view) {
+        Toast.makeText
+                (TugasAkhirActivity.this, "Person Added",
+                        Toast.LENGTH_SHORT).show();
+      }
+    });
+
+    printFab.setOnClickListener(
+            new View.OnClickListener() {
+              @Override
+              public void onClick(View view) {
+                Toast.makeText
+                        (TugasAkhirActivity.this, "Alarm Added",
+                                Toast.LENGTH_SHORT).show();
+              }
+            });
+    //=============
 
     //Buttom
     BottomNavigationItemView btnBack = findViewById(R.id.navigation_back);
