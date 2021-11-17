@@ -66,6 +66,9 @@
         <entry key="..\:/Users/galih/StudioProjects/UNOT/app/src/main/res/layout/fragment_notification.xml" value="0.1" />
         <entry key="..\:/Users/galih/StudioProjects/UNOT/app/src/main/res/layout/layout_header_drawer.xml" value="0.33" />
         <entry key="..\:/Users/galih/StudioProjects/UNOT/app/src/main/res/menu/menu_navigation.xml" value="0.209375" />
+        <entry key="app/src/main/res/drawable-v24/button_background.xml" value="0.18888888888888888" />
+        <entry key="app/src/main/res/drawable-v24/ic_back.xml" value="0.18888888888888888" />
+        <entry key="app/src/main/res/drawable-v24/print.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/circle_border.xml" value="0.10729166666666666" />
         <entry key="app/src/main/res/drawable/help_ico.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.21197916666666666" />
@@ -88,10 +91,19 @@
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login_admin.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/activity_qr.xml" value="0.1634963768115942" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_structure.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_structure_direction.xml" value="0.18614130434782608" />
+        <entry key="app/src/main/res/layout/activity_webview.xml" value="0.22" />
         <entry key="app/src/main/res/layout/dialog_jurusan.xml" value="0.42857142857142855" />
+        <entry key="app/src/main/res/layout/dialog_off.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1082427536231884" />
+        <entry key="app/src/main/res/layout/layout_header_drawer.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/menu/webview_nav_menu.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.21197916666666666" />
       </map>
     </option>

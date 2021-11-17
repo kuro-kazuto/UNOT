@@ -32,6 +32,7 @@ import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.untirta.unot.AdminSide.Admin_control;
 import com.untirta.unot.Blank404;
+import com.untirta.unot.MainActivity2;
 import com.untirta.unot.R;
 import com.untirta.unot.UserSoal.Soal_A;
 import com.untirta.unot.testfoto;
@@ -206,7 +207,7 @@ public class FragmentDashboard extends Fragment {
         builder.setPositiveButton("Saya Siap!", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(getActivity(), testfoto.class);
+                Intent intent = new Intent(getActivity(), MainActivity2.class);
                 startActivity(intent);
                 dialog.dismiss();
             }

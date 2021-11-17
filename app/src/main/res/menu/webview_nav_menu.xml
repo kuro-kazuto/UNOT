@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item
+    android:id="@+id/navigation_back"
+    android:icon="@drawable/ic_back"
+    android:enabled="true"/>
+
+  <item
+    android:id="@+id/navigation_forward"
+    android:icon="@drawable/ic_forward"
+    android:enabled="true" />
+
+  <item
+    android:id="@+id/navigation_reload"
+    android:icon="@drawable/ic_reload"
+    android:enabled="true"/>
+
+  <item
+    android:id="@+id/navigation_to_home"
+    android:icon="@drawable/ic_home_black_24dp"
+    android:enabled="true" />
+
+  <item
+    android:id="@+id/navigation_close"
+    android:icon="@drawable/ic_close"
+    android:enabled="true" />
+
+</menu>
