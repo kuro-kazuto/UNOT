@@ -6,6 +6,12 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.CancellationSignal;
+import android.os.ParcelFileDescriptor;
+import android.print.PageRange;
+import android.print.PrintAttributes;
+import android.print.PrintDocumentAdapter;
+import android.print.PrintManager;
 import android.view.View;
 import android.webkit.CookieManager;
 import android.webkit.WebStorage;
@@ -77,24 +83,13 @@ public class SpadaActivity extends AppCompatActivity {
       }
     });
 
-    qrFab.setOnClickListener(new View.OnClickListener() {
-      @Override
-      public void onClick(View view) {
-        Toast.makeText
-                (SpadaActivity.this, "Person Added",
-                        Toast.LENGTH_SHORT).show();
-      }
+    qrFab.setOnClickListener(view -> {
+      Intent intent = new Intent(SpadaActivity.this, QrTool.class);
+      startActivity(intent);
     });
 
     printFab.setOnClickListener(
-            new View.OnClickListener() {
-              @Override
-              public void onClick(View view) {
-                Toast.makeText
-                        (SpadaActivity.this, "Alarm Added",
-                                Toast.LENGTH_SHORT).show();
-              }
-            });
+            view -> doPrint());
     //=============
 
     //Buttom
@@ -242,5 +237,43 @@ public class SpadaActivity extends AppCompatActivity {
       CookieManager.getInstance().removeAllCookies(null);
     }
     CookieManager.getInstance().removeAllCookie();
+  }
+
+  //Method Print
+  private void doPrint() {
+    // Get the print manager.
+    PrintManager printManager = (PrintManager) getSystemService(Context.PRINT_SERVICE);
+    PrintDocumentAdapter adapter = new PrintDocumentAdapter() {
+      private final PrintDocumentAdapter mWrappedInstance =
+              webView.createPrintDocumentAdapter();
+
+      @Override
+      public void onStart() {
+        mWrappedInstance.onStart();
+      }
+
+      @Override
+      public void onLayout(PrintAttributes oldAttributes, PrintAttributes newAttributes,
+                           CancellationSignal cancellationSignal, LayoutResultCallback callback,
+                           Bundle extras) {
+        mWrappedInstance.onLayout(oldAttributes, newAttributes, cancellationSignal,
+                callback, extras);
+      }
+
+      @Override
+      public void onWrite(PageRange[] pages, ParcelFileDescriptor destination,
+                          CancellationSignal cancellationSignal, WriteResultCallback callback) {
+        mWrappedInstance.onWrite(pages, destination, cancellationSignal, callback);
+      }
+
+      @Override
+      public void onFinish() {
+        mWrappedInstance.onFinish();
+        webView.goBack();
+      }
+    };
+
+    // Pass in the ViewView's document adapter.
+    printManager.print("Print", adapter, null);
   }
 }
