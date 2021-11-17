@@ -1,18 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Preview_Create">
+    tools:context=".AdminSide.PreviewCreate">
 
-  <TextView
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:textSize="20dp"
-      android:textColor="@color/black"
-      android:textStyle="bold"
-    android:id="@+id/tvQuestion"/>
+    <TextView
+        android:id="@+id/previewSoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="20dp"
+        android:text="Question"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
 
-  </androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/prevo1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/previewSoal"
+        android:text="option 1"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/prevo2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/prevo1"
+        android:text="option 2"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/prevo3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/prevo2"
+        android:text="option 3"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/prevo4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/prevo3"
+        android:text="option 4"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/prevCA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/prevo4"
+        android:text="Correct Answer"
+        android:layout_margin="20dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/storeDb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/prevCA"
+        android:text="Buat Soal"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
