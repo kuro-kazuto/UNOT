@@ -30,7 +30,7 @@ public class Dashboard_admin extends AppCompatActivity {
         btnBuatSoal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Dashboard_admin.this, Set_Soal.class);
+                Intent intent = new Intent(Dashboard_admin.this, Admin_CreateQuestion.class);
                 startActivity(intent);
             }
         });
