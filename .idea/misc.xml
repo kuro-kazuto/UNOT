@@ -98,6 +98,7 @@
         <entry key="app/src/main/res/layout/activity_webview.xml" value="0.22" />
         <entry key="app/src/main/res/layout/dialog_jurusan.xml" value="0.42857142857142855" />
         <entry key="app/src/main/res/layout/dialog_off.xml" value="0.16847826086956522" />
+        <entry key="app/src/main/res/layout/fragment_account.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.1082427536231884" />
         <entry key="app/src/main/res/layout/layout_header_drawer.xml" value="0.16847826086956522" />
         <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.19583333333333333" />
