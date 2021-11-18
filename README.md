@@ -21,6 +21,6 @@ Nama : DIMAS EMERALDO AS-SYIDIQI
 
 NIM : 3332180065                       
 
-URL GITHUB : github.com/                
+URL GITHUB : github.com/https://github.com/Dimas014            
 
 # ===========================================
