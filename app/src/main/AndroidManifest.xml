@@ -13,7 +13,32 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ico_circle_mini"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.UNOT">
+
+        <activity
+            android:name=".WebView.QrTool"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".WebView.SiakadActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".WebView.TugasAkhirActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"/>
+        <activity
+            android:name=".WebView.WisudaActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".WebView.SpadaActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".MainActivity2"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".WebView.EadministrasiActivity"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+
+
         <activity android:name=".AdminSide.Admin_CreateQuestion"
             android:exported="true"
             />
