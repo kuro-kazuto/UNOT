@@ -77,8 +77,8 @@ public class Soal_A extends AppCompatActivity {
                 String NIM = tvNIM.getText().toString();
                 String scoreListening = mScoreTextViewL.getText().toString();
                 String scoreStructure = mScoreTextViewS.getText().toString();
-                Intent intent = new Intent(Soal_A.this, UnderConstruction.class);
-                intent.putExtra("NIM", NIM);
+                Intent intent = new Intent(Soal_A.this, MainActivity.class);
+                intent.putExtra("Uname", NIM);
                 intent.putExtra("scoreListening", scoreListening);
                 intent.putExtra("scoreStructure", scoreStructure);
                 startActivity(intent);
@@ -123,8 +123,8 @@ public class Soal_A extends AppCompatActivity {
         mScore = 0;
         displayScore();
 
-        tvNIM.setText(getIntent().getStringExtra("NIM"));
-        mScoreTextViewL.setText(getIntent().getStringExtra("scoreListening"));
+        tvNIM.setText(getIntent().getStringExtra("Uname"));
+        //mScoreTextViewL.setText(getIntent().getStringExtra("scoreListening"));
 
         timer();
     }
@@ -137,7 +137,7 @@ public class Soal_A extends AppCompatActivity {
     }
 
     public void displayScore() {
-        String scoreString = "Score Structure: " + mScore;
+        String scoreString = String.valueOf(mScore);
         mScoreTextViewS.setText(scoreString);
         mRemaningQuestionsTextView.setText("Remaining Questions: " + mTotalQuestions--);
     }
