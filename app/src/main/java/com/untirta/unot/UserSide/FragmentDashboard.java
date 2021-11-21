@@ -211,7 +211,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -262,7 +264,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -313,7 +317,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -364,7 +370,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -415,7 +423,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -466,7 +476,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -517,7 +529,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -568,7 +582,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
@@ -619,7 +635,9 @@ public class FragmentDashboard extends Fragment {
                             Admin_control value = snapshot.child(AktifasiAdmin).getValue(Admin_control.class);
                             String ValueA = value.getValueA();
                             if(ValueA.equals(On)){
+                                String name = getActivity().getIntent().getStringExtra("Uname");
                                 Intent intent = new Intent(getActivity(), Soal_A.class);
+                                intent.putExtra("Uname", name);
                                 startActivity(intent);
                                 dialog.dismiss();
                             }
