@@ -2,6 +2,7 @@ package com.untirta.unot.AdminSide;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -19,7 +20,7 @@ public class Admin_CreateQuestion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_create_question);
-
+        CQ = this;
         noSoal = findViewById(R.id.nosoal);
         Q = findViewById(R.id.inputSoal);
         O1 = findViewById(R.id.option1);
@@ -56,4 +57,7 @@ public class Admin_CreateQuestion extends AppCompatActivity {
 
 
     }
+
+    public static Activity CQ;
+
 }
