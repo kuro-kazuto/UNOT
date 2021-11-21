@@ -10,14 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.untirta.unot.R;
 import com.untirta.unot.Score;
+import com.untirta.unot.UserSoal.Model.ModelNilai;
 
 import java.util.List;
 
 public class Adapter_getData extends RecyclerView.Adapter {
 
-    List<Score> fetchDataList;
+    List<ModelNilai> fetchDataList;
 
-    public Adapter_getData(List<Score> fetchDataList) {
+    public Adapter_getData(List<ModelNilai> fetchDataList) {
         this.fetchDataList = fetchDataList;
     }
 
@@ -34,9 +35,9 @@ public class Adapter_getData extends RecyclerView.Adapter {
     public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, int position) {
 
         ViewHolderClass viewHolderClass = (ViewHolderClass)holder;
-        Score score = fetchDataList.get(position);
-        viewHolderClass.tvName.setText(score.getUserName().toString());
-        viewHolderClass.tvNilai.setText(score.getUserScoreT());
+        ModelNilai score = fetchDataList.get(position);
+        viewHolderClass.tvName.setText(score.getIdentitas());
+        viewHolderClass.tvNilai.setText(score.getNilai());
 
     }
 

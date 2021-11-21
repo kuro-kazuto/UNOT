@@ -15,16 +15,17 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.untirta.unot.R;
 import com.untirta.unot.Score;
+import com.untirta.unot.UserSoal.Model.ModelNilai;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Admin_nilai extends AppCompatActivity {
 
-    List<Score> fetchData;
+    List<ModelNilai> fetchData;
     RecyclerView recyclerView;
     Adapter_getData adapter_getData;
-    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Score");
+    DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Nilai");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,7 +40,7 @@ public class Admin_nilai extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot:snapshot.getChildren()){
-                    Score data = dataSnapshot.getValue(Score.class);
+                    ModelNilai data = dataSnapshot.getValue(ModelNilai.class);
                     fetchData.add(data);
                 }
                 adapter_getData = new Adapter_getData(fetchData);
