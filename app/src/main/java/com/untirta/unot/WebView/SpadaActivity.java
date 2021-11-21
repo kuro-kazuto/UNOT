@@ -19,7 +19,6 @@ import android.webkit.WebView;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
@@ -27,7 +26,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import com.google.android.material.bottomnavigation.BottomNavigationItemView;
 import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.untirta.unot.MainActivity2;
 import com.untirta.unot.R;
 
 import java.util.Objects;
@@ -146,9 +144,7 @@ public class SpadaActivity extends AppCompatActivity {
         webView.clearCache(true);
         webView.clearHistory();
         deleteCookies();
-        Intent i = new Intent(SpadaActivity.this, MainActivity2.class);
-        i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK |Intent.FLAG_ACTIVITY_CLEAR_TOP);
-        startActivity(i);
+        finish();
       }
     });
 
@@ -178,7 +174,7 @@ public class SpadaActivity extends AppCompatActivity {
       webView.getSettings().setMinimumFontSize(12);
       webView.getSettings().setDomStorageEnabled(true);
       webView.getSettings().setJavaScriptEnabled(true);
-      String newUA= "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12) AppleWebKit/602.1.50 (KHTML, like Gecko) Version/10.0 Safari/602.1.50";
+      String newUA= "Mozilla/5.0 (Linux; Android 9; Android SDK built for x86_64 Build/PSR1.180720.075; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/69.0.3497.100 Mobile Safari/537.36";
       webView.getSettings().setUserAgentString(newUA);
       webView.setWebViewClient(new Callback());  //HERE IS THE MAIN CHANGE
       webView.loadUrl(url);

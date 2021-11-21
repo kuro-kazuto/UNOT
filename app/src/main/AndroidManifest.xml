@@ -35,19 +35,18 @@
             android:name=".WebView.SpadaActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
         <activity
-            android:name=".MainActivity2"
-            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
-        <activity
             android:name=".WebView.EadministrasiActivity"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
 
 
         <activity android:name=".AdminSide.Admin_CreateQuestion"
             android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"
             />
         <activity
             android:name=".AdminSide.PreviewCreate"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"/>
         <activity
             android:name=".UserSoal.Soal_A"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
