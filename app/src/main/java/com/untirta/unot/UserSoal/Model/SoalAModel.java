@@ -3,14 +3,14 @@ package com.untirta.unot.UserSoal.Model;
 import com.google.firebase.database.DatabaseReference;
 
 public class SoalAModel {
-    String id, question, jawabanBenar, answerA, answerB, answerC, answerD;
+    String id, no, question, jawabanBenar, answerA, answerB, answerC, answerD;
 
     public SoalAModel() {
-
     }
 
-    public SoalAModel(String id, String question, String jawabanBenar, String answerA, String answerB, String answerC, String answerD) {
+    public SoalAModel(String id, String no, String question, String jawabanBenar, String answerA, String answerB, String answerC, String answerD) {
         this.id = id;
+        this.no = no;
         this.question = question;
         this.jawabanBenar = jawabanBenar;
         this.answerA = answerA;
@@ -25,6 +25,14 @@ public class SoalAModel {
 
     public void setId(String id) {
         this.id = id;
+    }
+
+    public String getNo() {
+        return no;
+    }
+
+    public void setNo(String no) {
+        this.no = no;
     }
 
     public String getQuestion() {

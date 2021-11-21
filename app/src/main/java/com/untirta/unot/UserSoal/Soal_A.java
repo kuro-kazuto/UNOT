@@ -18,6 +18,7 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.untirta.unot.UserSoal.Adapter.SoalAAdapter;
+import com.untirta.unot.UserSoal.Model.ModelNilai;
 import com.untirta.unot.UserSoal.Model.SoalAModel;
 import com.untirta.unot.R;
 import com.untirta.unot.UnderConstruction;
@@ -47,6 +48,7 @@ public class Soal_A extends AppCompatActivity {
     private int mScore;
     private SoalAModel currentQuestion;
     DatabaseReference databaseReference = FirebaseDatabase.getInstance().getReference("Soal");
+    DatabaseReference nilaiDB = FirebaseDatabase.getInstance().getReference("Nilai");
 
 
     Button btnNext;
@@ -74,13 +76,18 @@ public class Soal_A extends AppCompatActivity {
         btnNext.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
+                String id = nilaiDB.push().getKey();
                 String NIM = tvNIM.getText().toString();
-                String scoreListening = mScoreTextViewL.getText().toString();
-                String scoreStructure = mScoreTextViewS.getText().toString();
-                Intent intent = new Intent(Soal_A.this, MainActivity.class);
+                String nilai = mScoreTextViewS.getText().toString().trim();
+
+                ModelNilai userNilai = new ModelNilai(id, NIM, nilai);
+
+                nilaiDB.child(userNilai.getIdentitas()).setValue(userNilai);
+
+                Intent intent = new Intent(Soal_A.this, FinalScore.class);
+                intent.putExtra("nilai", nilai);
                 intent.putExtra("Uname", NIM);
-                intent.putExtra("scoreListening", scoreListening);
-                intent.putExtra("scoreStructure", scoreStructure);
                 startActivity(intent);
                 countDownTimer.cancel();
             }
@@ -114,7 +121,7 @@ public class Soal_A extends AppCompatActivity {
 
 
         tvNIM = findViewById(R.id.Nim);
-        mScoreTextViewL = findViewById(R.id.scoreL);
+
         mScoreTextViewS = findViewById(R.id.scoreS);
         mParentLayout = findViewById(R.id.question_layout);
         mRemaningQuestionsTextView = findViewById(R.id.QuestionNumber);
@@ -124,6 +131,10 @@ public class Soal_A extends AppCompatActivity {
         displayScore();
 
         tvNIM.setText(getIntent().getStringExtra("Uname"));
+
+
+
+
         //mScoreTextViewL.setText(getIntent().getStringExtra("scoreListening"));
 
         timer();
@@ -157,13 +168,16 @@ public class Soal_A extends AppCompatActivity {
 
             @Override
             public void onFinish() {
+                String id = nilaiDB.push().getKey();
                 String NIM = tvNIM.getText().toString();
-                String scoreListening = mScoreTextViewL.getText().toString();
-                String scoreStructure = mScoreTextViewS.getText().toString();
-                Intent intent = new Intent(Soal_A.this, MainActivity.class);
-                intent.putExtra("NIM", NIM);
-                intent.putExtra("scoreListening", scoreListening);
-                intent.putExtra("scoreStructure", scoreStructure);
+                String nilai = mScoreTextViewS.getText().toString().trim();
+
+                ModelNilai userNilai = new ModelNilai(id, NIM, nilai);
+
+                nilaiDB.child(userNilai.getIdentitas()).setValue(userNilai);
+                Intent intent = new Intent(Soal_A.this, FinalScore.class);
+                intent.putExtra("nilai", nilai);
+                intent.putExtra("Uname", NIM);
                 startActivity(intent);
             }
         }.start();

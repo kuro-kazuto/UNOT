@@ -51,16 +51,7 @@
             android:textColor="@color/black"
             android:textSize="17sp" />
 
-        <TextView
-            android:id="@+id/scoreL"
-            android:visibility="gone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/Nim"
-            android:layout_marginTop="5dp"
-            android:text="Score Listening: 0"
-            android:textColor="@color/white"
-            android:textSize="13sp" />
+
 
         <TextView
             android:id="@+id/scoreS"

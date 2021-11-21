@@ -12,7 +12,7 @@ import com.untirta.unot.R;
 
 public class Admin_CreateQuestion extends AppCompatActivity {
 
-    EditText Q, O1, O2, O3, O4, CA;
+    EditText noSoal, Q, O1, O2, O3, O4, CA;
     Button btnCreate;
 
     @Override
@@ -20,6 +20,7 @@ public class Admin_CreateQuestion extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_create_question);
 
+        noSoal = findViewById(R.id.nosoal);
         Q = findViewById(R.id.inputSoal);
         O1 = findViewById(R.id.option1);
         O2 = findViewById(R.id.option2);
@@ -34,6 +35,7 @@ public class Admin_CreateQuestion extends AppCompatActivity {
         btnCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String NoSoal = noSoal.getText().toString();
                 String Que = Q.getText().toString();
                 String o1 = O1.getText().toString();
                 String o2 = O2.getText().toString();
@@ -41,6 +43,7 @@ public class Admin_CreateQuestion extends AppCompatActivity {
                 String o4 = O4.getText().toString();
                 String ca = CA.getText().toString();
                 Intent intent = new Intent(Admin_CreateQuestion.this, PreviewCreate.class);
+                intent.putExtra("nosoal", NoSoal);
                 intent.putExtra("que", Que);
                 intent.putExtra("o1", o1);
                 intent.putExtra("o2", o2);
