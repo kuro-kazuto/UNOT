@@ -382,15 +382,15 @@
 
                         <ImageView
                             android:id="@+id/siakad"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_alignParentStart="true"
                             android:layout_alignParentTop="true"
                             android:layout_marginTop="20dp"
                             android:src="@mipmap/ico_circle_mini" />
 
                         <TextView
-                            android:layout_width="70dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/siakad"
                             android:layout_alignParentStart="true"
@@ -401,15 +401,15 @@
 
                         <ImageView
                             android:id="@+id/spada"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_below="@id/siakad"
                             android:layout_alignParentStart="true"
                             android:layout_marginTop="25dp"
                             android:src="@mipmap/untirta" />
 
                         <TextView
-                            android:layout_width="70dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/spada"
                             android:layout_alignParentStart="true"
@@ -421,8 +421,8 @@
 
                         <ImageView
                             android:id="@+id/eadmin"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="20dp"
@@ -430,7 +430,7 @@
                             android:src="@mipmap/launcher_ico" />
 
                         <TextView
-                            android:layout_width="70dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/eadmin"
                             android:layout_marginStart="25dp"
@@ -442,8 +442,8 @@
 
                         <ImageView
                             android:id="@+id/wisuda"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_below="@id/siakad"
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="25dp"
@@ -451,7 +451,7 @@
                             android:src="@mipmap/untirta" />
 
                         <TextView
-                            android:layout_width="70dp"
+                            android:layout_width="60dp"
                             android:layout_height="wrap_content"
                             android:layout_below="@id/wisuda"
                             android:layout_marginStart="25dp"
@@ -463,8 +463,8 @@
 
                         <ImageView
                             android:id="@+id/tugasakhir"
-                            android:layout_width="70dp"
-                            android:layout_height="70dp"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
                             android:layout_alignParentTop="true"
                             android:layout_marginStart="25dp"
                             android:layout_marginTop="20dp"
