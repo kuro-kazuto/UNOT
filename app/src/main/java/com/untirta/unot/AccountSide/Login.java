@@ -22,7 +22,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.untirta.unot.Help;
+import com.untirta.unot.About.About;
+import com.untirta.unot.About.Help;
 import com.untirta.unot.R;
 import com.untirta.unot.UserSide.UserPhoto;
 
@@ -63,7 +64,7 @@ public class Login extends AppCompatActivity {
             startActivity(help);
         });
         btnAbout.setOnClickListener(v -> {
-            Intent about = new Intent(Login.this, Help.class);
+            Intent about = new Intent(Login.this, About.class);
             startActivity(about);
         });
     }

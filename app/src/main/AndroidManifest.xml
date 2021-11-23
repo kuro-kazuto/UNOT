@@ -21,6 +21,15 @@
             android:name=".UserSoal.FinalScore"
             android:exported="true" />
         <activity
+            android:name=".About.About"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".About.Dev1"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
+            android:name=".About.Dev2"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
+        <activity
             android:name=".WebView.QrTool"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />
         <activity
@@ -80,7 +89,7 @@
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".Help"
+            android:name=".About.Help"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".AccountSide.Create_account"

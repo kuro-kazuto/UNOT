@@ -71,6 +71,7 @@
         <entry key="app/src/main/res/drawable-v24/ic_back.xml" value="0.18888888888888888" />
         <entry key="app/src/main/res/drawable-v24/print.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/circle_border.xml" value="0.10729166666666666" />
+        <entry key="app/src/main/res/drawable/fouth_gradient.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/help_ico.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/ic_lock.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/ic_username.xml" value="0.21197916666666666" />
@@ -80,6 +81,7 @@
         <entry key="app/src/main/res/drawable/rounded_login.xml" value="0.10729166666666666" />
         <entry key="app/src/main/res/drawable/rounded_white.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/third_gradient.xml" value="0.21197916666666666" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.44815256257449343" />
         <entry key="app/src/main/res/layout/activity_activation.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_admin_create_question.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_admin_remote.xml" value="0.19583333333333333" />
@@ -88,7 +90,9 @@
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dashboard_admin.xml" value="0.19927536231884058" />
         <entry key="app/src/main/res/layout/activity_datadiri.xml" value="0.1046875" />
-        <entry key="app/src/main/res/layout/activity_final_score.xml" value="0.1526268115942029" />
+        <entry key="app/src/main/res/layout/activity_dev1.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_dev2.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_final_score.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_help.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_listening_direction.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />

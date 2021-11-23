@@ -4,4 +4,12 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="about">
+        UNTIRTA ONLINE TEST (UNOT) adalah aplikasi yang dikembangkan oleh GALIH AJI .P DAN DIMAS EMERALDO .A
+        angkatan 2018 JTE FT UNTIRTA sebagai Tugas dalam mata kuliah Aplikasi Bergerak. UNOT merupakan bentuk pengembangan
+        dari project kami sebelumnya yang berjudul Smart Tirtayasa TOEFL Quix (STTQ) dengan mengubah susunan database, layout,
+        dan security yang jauh lebih baik dan ramah bagi Smartphone. Harapan kami kedepannya agar kami dapat terus mendapat
+        dukungan dari berbagai pihak untuk terus berkarya dan berinovasi pada mobile apps android yang selalu berkembang
+        dari waktu ke waktu.
+    </string>
 </resources>

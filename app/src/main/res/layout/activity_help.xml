@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/third_gradient"
     android:orientation="vertical"
-    tools:context=".Help">
+    tools:context=".About.Help">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -62,46 +62,7 @@
                     android:layout_height="wrap_content"
                     android:drawableStart="@drawable/bullet"
                     android:drawablePadding="10dp"
-                    android:text="Pada Listening Section terdapat tombol player sound, silahkan aktifkan saat listening berlangsung"
-                    android:textColor="@color/black"
-                    android:textAlignment="textStart"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/bullet"
-                    android:drawablePadding="10dp"
-                    android:text="Pada Reading Section terdapat tombol show text untuk melihat deskripsi text"
-                    android:textColor="@color/black"
-                    android:textAlignment="textStart"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/bullet"
-                    android:drawablePadding="10dp"
                     android:text="Saat anda sudah pindah dari satu section ke section berikutnya, anda tidak dapat kembali ke section sebelumya"
-                    android:textColor="@color/black"
-                    android:textAlignment="textStart"
-                    android:layout_marginTop="8dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginEnd="8dp"
-                    />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/bullet"
-                    android:drawablePadding="10dp"
-                    android:text="Aplikasi hanya dapat digunakan sekali untuk tiap NIM/NPM, sehingga anda tidak dapat mengulangi test kecuali anda melapor administrator."
                     android:textColor="@color/black"
                     android:textAlignment="textStart"
                     android:layout_marginTop="8dp"
