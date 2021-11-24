@@ -90,10 +90,10 @@
         <entry key="app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dashboard_admin.xml" value="0.19927536231884058" />
         <entry key="app/src/main/res/layout/activity_datadiri.xml" value="0.1046875" />
-        <entry key="app/src/main/res/layout/activity_dev1.xml" value="0.19583333333333333" />
-        <entry key="app/src/main/res/layout/activity_dev2.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_dev1.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_dev2.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_final_score.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_help.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/activity_help.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_listening_direction.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_login_admin.xml" value="0.19583333333333333" />
