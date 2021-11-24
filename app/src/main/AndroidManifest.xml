@@ -17,6 +17,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UNOT"
         android:usesCleartextTraffic="true">
+
+        <activity android:name=".FeedRss.NewsReadActivity"></activity>
+        <activity
+            android:name=".FeedRss.News"
+            android:exported="true">
+
+        </activity>
+
         <activity
             android:name=".UserSoal.FinalScore"
             android:exported="true" />
