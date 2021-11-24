@@ -81,7 +81,7 @@
         <entry key="app/src/main/res/drawable/rounded_login.xml" value="0.10729166666666666" />
         <entry key="app/src/main/res/drawable/rounded_white.xml" value="0.21197916666666666" />
         <entry key="app/src/main/res/drawable/third_gradient.xml" value="0.21197916666666666" />
-        <entry key="app/src/main/res/layout/activity_about.xml" value="0.44815256257449343" />
+        <entry key="app/src/main/res/layout/activity_about.xml" value="0.43825665859564167" />
         <entry key="app/src/main/res/layout/activity_activation.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_admin_create_question.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_admin_remote.xml" value="0.19583333333333333" />
@@ -92,7 +92,7 @@
         <entry key="app/src/main/res/layout/activity_datadiri.xml" value="0.1046875" />
         <entry key="app/src/main/res/layout/activity_dev1.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_dev2.xml" value="0.33" />
-        <entry key="app/src/main/res/layout/activity_final_score.xml" value="0.33" />
+        <entry key="app/src/main/res/layout/activity_final_score.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_help.xml" value="0.33" />
         <entry key="app/src/main/res/layout/activity_listening_direction.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_login.xml" value="0.33" />
@@ -103,7 +103,7 @@
         <entry key="app/src/main/res/layout/activity_news_read.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_preview_create.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_qr.xml" value="0.1634963768115942" />
-        <entry key="app/src/main/res/layout/activity_soal_a.xml" value="0.1331521739130435" />
+        <entry key="app/src/main/res/layout/activity_soal_a.xml" value="0.16" />
         <entry key="app/src/main/res/layout/activity_splash.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/activity_structure.xml" value="0.1875" />
         <entry key="app/src/main/res/layout/activity_structure_direction.xml" value="0.18614130434782608" />
@@ -114,6 +114,7 @@
         <entry key="app/src/main/res/layout/fragment_account.xml" value="0.25" />
         <entry key="app/src/main/res/layout/fragment_dashboard.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment_notification.xml" value="0.19583333333333333" />
+        <entry key="app/src/main/res/layout/item_layout.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/layout/layout_header_drawer.xml" value="0.16847826086956522" />
         <entry key="app/src/main/res/menu/menu_navigation.xml" value="0.19583333333333333" />
         <entry key="app/src/main/res/menu/webview_nav_menu.xml" value="0.19583333333333333" />
@@ -126,12 +127,5 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
-  </component>
-  <component name="VisualizationToolProject">
-    <option name="state">
-      <ProjectState>
-        <option name="scale" value="0.18" />
-      </ProjectState>
-    </option>
   </component>
 </project>

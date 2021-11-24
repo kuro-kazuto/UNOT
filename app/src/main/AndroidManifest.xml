@@ -21,13 +21,16 @@
         <activity android:name=".FeedRss.NewsReadActivity"></activity>
         <activity
             android:name=".FeedRss.News"
-            android:exported="true">
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge">
 
         </activity>
 
         <activity
             android:name=".UserSoal.FinalScore"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge"/>
+
         <activity
             android:name=".About.About"
             android:theme="@style/Theme.MaterialComponents.Light.NoActionBar.Bridge" />

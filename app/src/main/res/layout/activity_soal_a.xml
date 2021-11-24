@@ -104,9 +104,10 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="16dp"
-                android:backgroundTint="#FFFF3B"
-                android:text="Selesai"
+                android:background="@drawable/rounded_dialog"
+                android:backgroundTint="@color/Yellow"
                 android:textColor="@color/black"
+                android:text="Selesai"
                 android:textSize="16sp"/>
 
 

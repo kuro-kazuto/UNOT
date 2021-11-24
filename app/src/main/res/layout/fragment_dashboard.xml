@@ -28,7 +28,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginEnd="5dp"
             android:scaleType="centerCrop"
-            android:src="@mipmap/ico_square_mini"
+            android:src="@mipmap/oops"
             app:layout_constraintBottom_toBottomOf="@+id/quotesforuser"
             app:layout_constraintStart_toStartOf="parent" />
 

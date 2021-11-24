@@ -178,7 +178,7 @@ public class News extends AppCompatActivity {
             if(i==index){
                 paginationButtons[index]
                         .setBackgroundDrawable(getResources()
-                                .getDrawable(R.drawable.ic_launcher_background));
+                                .getDrawable(R.color.transparent_red));
                 paginationButtons[i]
                         .setTextColor(getResources()
                                 .getColor(android.R.color.white));
