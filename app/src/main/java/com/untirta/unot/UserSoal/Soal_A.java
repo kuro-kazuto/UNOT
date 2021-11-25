@@ -23,6 +23,8 @@ import com.untirta.unot.UserSoal.Model.SoalAModel;
 import com.untirta.unot.R;
 import com.untirta.unot.UnderConstruction;
 import com.untirta.unot.UserSide.MainActivity;
+
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -79,7 +81,12 @@ public class Soal_A extends AppCompatActivity {
 
                 String id = nilaiDB.push().getKey();
                 String NIM = tvNIM.getText().toString();
-                String nilai = mScoreTextViewS.getText().toString().trim();
+                String total = mScoreTextViewS.getText().toString().trim();
+                Double konversiTotal = Double.parseDouble(total);
+                Double T = (konversiTotal*100)/10;
+                DecimalFormat df = new DecimalFormat("#");
+                String hasil = df.format(T);
+                String nilai = hasil;
 
                 ModelNilai userNilai = new ModelNilai(id, NIM, nilai);
 
