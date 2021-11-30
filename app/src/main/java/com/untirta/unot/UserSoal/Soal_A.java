@@ -7,6 +7,8 @@ import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
@@ -150,7 +152,7 @@ public class Soal_A extends AppCompatActivity {
     @Override
     public void onBackPressed() {
         // super.onBackPressed();
-        //Toast.makeText(Listening.this,"You Click Back Button !, Are You Want To Cheating ?",Toast.LENGTH_SHORT).show();
+        Toast.makeText(Soal_A.this,"Anda tidak diperkenankan kembali sebelum soal diselesaikan !",Toast.LENGTH_SHORT).show();
         return;
     }
 
