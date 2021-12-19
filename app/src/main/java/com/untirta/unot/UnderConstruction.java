@@ -25,5 +25,6 @@ public class UnderConstruction extends AppCompatActivity {
         String NIM = getIntent().getStringExtra("Uname");
         intent.putExtra("Uname", NIM);
         startActivity(intent);
+        finish();
     }
 }

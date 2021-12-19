@@ -1,5 +1,6 @@
 package com.untirta.unot.UserSide;
 
+import android.app.Activity;
 import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
@@ -111,6 +112,4 @@ public class MainActivity extends AppCompatActivity
             super.onBackPressed();
         }
     }
-
-
 }
