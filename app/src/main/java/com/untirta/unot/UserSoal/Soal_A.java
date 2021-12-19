@@ -68,13 +68,6 @@ public class Soal_A extends AppCompatActivity {
 
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_SECURE, WindowManager.LayoutParams.FLAG_SECURE);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Structure");
-        }
-
-
-
         btnNext = findViewById(R.id.btnNext);
         tvTimer = findViewById(R.id.Timer);
         btnNext.setOnClickListener(new View.OnClickListener() {
@@ -83,9 +76,12 @@ public class Soal_A extends AppCompatActivity {
 
                 String id = nilaiDB.push().getKey();
                 String NIM = tvNIM.getText().toString();
+
+
                 String total = mScoreTextViewS.getText().toString().trim();
+                int jumlahSoal = fetchdata.size();
                 Double konversiTotal = Double.parseDouble(total);
-                Double T = (konversiTotal*100)/10;
+                Double T = (konversiTotal*100)/jumlahSoal;
                 DecimalFormat df = new DecimalFormat("#");
                 String hasil = df.format(T);
                 String nilai = hasil;

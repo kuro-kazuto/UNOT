@@ -70,9 +70,6 @@
             android:name=".UserSoal.Soal_A"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".testfoto"
-            android:exported="true" />
-        <activity
             android:name=".UnderConstruction"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -84,9 +81,6 @@
             android:name=".AdminSide.Dashboard_admin"
             android:exported="true"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".AdminSide.Activation"
-            android:exported="true" />
         <activity
             android:name=".AdminSide.Admin_Remote"
             android:exported="true"

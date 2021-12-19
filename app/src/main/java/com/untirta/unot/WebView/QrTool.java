@@ -3,6 +3,7 @@ package com.untirta.unot.WebView;
 import android.Manifest;
 import android.content.ClipboardManager;
 import android.content.Context;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.Toast;
@@ -31,6 +32,7 @@ public class QrTool extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_qr);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         ivBgContent = findViewById(R.id.ivBgContent);
         scannerView = findViewById(R.id.scannerView);
         ivBgContent.bringToFront();

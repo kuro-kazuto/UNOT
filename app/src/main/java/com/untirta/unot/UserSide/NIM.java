@@ -1,4 +1,4 @@
-package com.untirta.unot;
+package com.untirta.unot.UserSide;
 
 public class NIM {
     String id;

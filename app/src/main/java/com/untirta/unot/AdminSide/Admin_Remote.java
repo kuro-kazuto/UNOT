@@ -29,7 +29,7 @@ public class Admin_Remote extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_admin_remote);
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         databaseReference = FirebaseDatabase.getInstance().getReference("AdminAktifasi");
         btnAdminOn = findViewById(R.id.tmbl);
         btnAdminOff = findViewById(R.id.tmbl2);

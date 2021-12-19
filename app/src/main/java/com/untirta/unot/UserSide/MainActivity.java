@@ -1,5 +1,6 @@
 package com.untirta.unot.UserSide;
 
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.TextView;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         navigationView = findViewById(R.id.nav_view);
         drawer = findViewById(R.id.drawer_layout);
@@ -55,6 +57,19 @@ public class MainActivity extends AppCompatActivity
 
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+    }
+
+    @Override
+    public void onPause() {
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        super.onPause();
+    }
+
 
     private void firstFragmentDisplay(int itemId) {
 
@@ -68,7 +83,7 @@ public class MainActivity extends AppCompatActivity
                 fragment = new FragmentAccount();
                 break;
             case R.id.nav_notification:
-                fragment = new FragmentNotification();
+                fragment = new FragmentNews();
                 break;
         }
 

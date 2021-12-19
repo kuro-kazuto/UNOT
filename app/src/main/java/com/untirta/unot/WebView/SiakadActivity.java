@@ -2,6 +2,7 @@ package com.untirta.unot.WebView;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -47,6 +48,7 @@ public class SiakadActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_webview);
+    setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
     webView = findViewById(R.id.webview);
     webView.getSettings().setJavaScriptEnabled(true);
     error = findViewById(R.id.error);

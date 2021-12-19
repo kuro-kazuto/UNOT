@@ -13,7 +13,7 @@ import com.untirta.unot.FeedRss.News;
 
 public class Splash extends AppCompatActivity {
 
-    //4000=4 detik
+    //1000=1 detik
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

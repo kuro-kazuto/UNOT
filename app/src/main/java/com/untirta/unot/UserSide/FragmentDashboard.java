@@ -3,6 +3,7 @@ package com.untirta.unot.UserSide;
 
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -33,6 +34,7 @@ import com.google.firebase.storage.StorageReference;
 import com.untirta.unot.AdminSide.Admin_control;
 import com.untirta.unot.Blank404;
 import com.untirta.unot.R;
+import com.untirta.unot.UnderConstruction;
 import com.untirta.unot.UserSoal.Soal_A;
 import com.untirta.unot.WebView.EadministrasiActivity;
 import com.untirta.unot.WebView.SiakadActivity;
@@ -58,9 +60,23 @@ public class FragmentDashboard extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+    }
+
+    @Override
+    public void onPause() {
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+        super.onPause();
+    }
+
+    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("Beranda");
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         TextView NIM = view.findViewById(R.id.greeting);
         String namaFile = getActivity().getIntent().getStringExtra("Uname");
         ImageView Button0 = view.findViewById(R.id.button0);
@@ -102,19 +118,19 @@ public class FragmentDashboard extends Fragment {
                 }
             }
         });
-
-
+        //onClickListener Button Soal Disini
         Button0.setOnClickListener(v -> Button0Dialog());
-        Button1.setOnClickListener(v -> Button1Dialog());
-        Button2.setOnClickListener(v -> Button2Dialog());
-        Button3.setOnClickListener(v -> Button3Dialog());
-        Button4.setOnClickListener(v -> Button4Dialog());
-        Button5.setOnClickListener(v -> Button5Dialog());
-        Button6.setOnClickListener(v -> Button6Dialog());
-        Button7.setOnClickListener(v -> Button7Dialog());
-        Button8.setOnClickListener(v -> Button8Dialog());
-        Button9.setOnClickListener(v -> Button9Dialog());
+        Button1.setOnClickListener(v -> underConstruction());
+        Button2.setOnClickListener(v -> underConstruction());
+        Button3.setOnClickListener(v -> underConstruction());
+        Button4.setOnClickListener(v -> underConstruction());
+        Button5.setOnClickListener(v -> underConstruction());
+        Button6.setOnClickListener(v -> underConstruction());
+        Button7.setOnClickListener(v -> underConstruction());
+        Button8.setOnClickListener(v -> underConstruction());
+        Button9.setOnClickListener(v -> underConstruction());
 
+        //onClickListener WebView Disini
         TA.setOnClickListener(v -> {
             Intent intent = new Intent(getActivity(), TugasAkhirActivity.class);
             startActivity(intent);
@@ -137,6 +153,7 @@ public class FragmentDashboard extends Fragment {
         });
     }
 
+    //Private Method untuk onClick
     private void Button0Dialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("Apakah Kamu Siap?");
@@ -667,5 +684,12 @@ public class FragmentDashboard extends Fragment {
         });
         AlertDialog dialog = builder.create();
         dialog.show();
+    }
+
+    private void underConstruction() {
+        String name = getActivity().getIntent().getStringExtra("Uname");
+        Intent intent = new Intent(getActivity(), UnderConstruction.class);
+        intent.putExtra("Uname", name);
+        startActivity(intent);
     }
 }

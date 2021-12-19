@@ -2,6 +2,7 @@ package com.untirta.unot.UserSide;
 
 
 import android.Manifest;
+import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.net.Uri;
@@ -55,9 +56,17 @@ public class FragmentAccount extends Fragment {
     }
 
     @Override
+    public void onResume() {
+        super.onResume();
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
+
+    }
+
+    @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         getActivity().setTitle("Akun Saya");
+        getActivity().setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         String namaFile = getActivity().getIntent().getStringExtra("Uname");
 
         //INI BAGIAN TARIK GAMBAR DARI FIREBASE STORAGE
